@@ -1,0 +1,110 @@
+---
+permalink: sm-settings/nvme-terminology.html 
+sidebar: sidebar 
+keywords: nvme, terms, storage array 
+summary: Scopri in che modo i termini NVMe si applicano al tuo storage array. 
+---
+= Terminologia NVMe
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Scopri in che modo i termini NVMe si applicano al tuo storage array.
+
+[cols="1a,3a"]
+|===
+| Termine | Descrizione 
+
+
+ a| 
+InfiniBand
+ a| 
+InfiniBand (IB) è uno standard di comunicazione per la trasmissione dei dati tra server e sistemi storage dalle performance elevate.
+
+
+
+ a| 
+Namespace
+ a| 
+Uno spazio dei nomi è uno storage NVM formattato per l'accesso a blocchi. È analogo a un'unità logica in SCSI, che si riferisce a un volume nell'array di storage.
+
+
+
+ a| 
+ID spazio dei nomi
+ a| 
+L'ID dello spazio dei nomi è l'identificatore univoco del controller NVMe per lo spazio dei nomi e può essere impostato su un valore compreso tra 1 e 255. È analogo a un numero di unità logica (LUN) in SCSI.
+
+
+
+ a| 
+NQN
+ a| 
+NVMe Qualified Name (NQN) viene utilizzato per identificare la destinazione dello storage remoto (lo storage array).
+
+
+
+ a| 
+NVM
+ a| 
+La memoria non volatile (NVM) è una memoria persistente utilizzata in molti tipi di dispositivi di storage.
+
+
+
+ a| 
+NVMe
+ a| 
+NVMe (non-volatile Memory Express) è un'interfaccia progettata per i dispositivi di storage basati su flash, come ad esempio i dischi SSD. NVMe riduce l'overhead di i/o e include miglioramenti delle performance rispetto alle interfacce dei dispositivi logici precedenti.
+
+
+
+ a| 
+NVMe-of
+ a| 
+NVMe-of (non-volatile Memory Express over Fabrics) è una specifica che consente ai comandi e ai dati NVMe di trasferire in rete tra un host e lo storage.
+
+
+
+ a| 
+Controller NVMe
+ a| 
+Durante il processo di connessione all'host viene creato un controller NVMe. Fornisce un percorso di accesso tra un host e gli spazi dei nomi nell'array di storage.
+
+
+
+ a| 
+Coda NVMe
+ a| 
+Una coda viene utilizzata per il passaggio di comandi e messaggi sull'interfaccia NVMe.
+
+
+
+ a| 
+Sottosistema NVMe
+ a| 
+Lo storage array con una connessione host NVMe.
+
+
+
+ a| 
+RDMA
+ a| 
+L'accesso remoto diretto alla memoria (RDMA) consente uno spostamento dei dati più diretto all'interno e all'esterno di un server implementando un protocollo di trasporto nell'hardware della scheda di interfaccia di rete (NIC).
+
+
+
+ a| 
+ROCE
+ a| 
+RDMA over Converged Ethernet (RoCE) è un protocollo di rete che consente l'accesso remoto diretto alla memoria (RDMA) su una rete Ethernet.
+
+
+
+ a| 
+SSD
+ a| 
+I dischi a stato solido (SSD) sono dispositivi di storage che utilizzano la memoria a stato solido (flash) per memorizzare i dati in modo persistente. Gli SSD emulano i dischi rigidi convenzionali e sono disponibili con le stesse interfacce utilizzate dai dischi rigidi.
+
+|===

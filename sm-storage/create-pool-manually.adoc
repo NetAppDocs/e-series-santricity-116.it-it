@@ -1,0 +1,114 @@
+---
+permalink: sm-storage/create-pool-manually.html 
+sidebar: sidebar 
+keywords: create, pool, manually, set, candidates, auto configuration, feature, provide, meet, needs, logical, storage, capacity, necessary, individual, volumes, use, host, application 
+summary: 'È possibile creare un pool manualmente (da un set di candidati) se la funzione di configurazione automatica del pool non fornisce un pool che soddisfa le proprie esigenze. Un pool fornisce la capacità di storage logico necessaria per creare singoli volumi che possono essere utilizzati per ospitare le applicazioni.' 
+---
+= Creare il pool manualmente
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile creare un pool manualmente (da un set di candidati) se la funzione di configurazione automatica del pool non fornisce un pool che soddisfa le proprie esigenze. Un pool fornisce la capacità di storage logico necessaria per creare singoli volumi che possono essere utilizzati per ospitare le applicazioni.
+
+.Prima di iniziare
+* È necessario disporre di un minimo di 11 dischi con lo stesso tipo di disco (HDD o SSD).
+* La protezione contro la perdita di shelf richiede che i dischi che compongono il pool si trovino in almeno sei diversi shelf di dischi e che non vi siano più di due dischi in un singolo shelf di dischi.
+* La protezione contro la perdita di cassetto richiede che le unità che compongono il pool siano collocate in almeno cinque cassetti diversi e che il pool includa un numero uguale di shelf di dischi da ciascun cassetto.
+* Durante la configurazione di uno storage array EF600, assicurarsi che ciascun controller abbia accesso a un numero uguale di dischi nei primi 12 slot e a un numero uguale di dischi negli ultimi 12 slot. Questa configurazione aiuta i controller a utilizzare entrambi i bus PCIe lato disco in modo più efficace. Attualmente, System Manager consente la selezione del disco nella funzione Advanced (Avanzate) quando si crea un gruppo di volumi. Per la creazione del pool, si consiglia di utilizzare tutti i dischi dell'array di storage.
+
+
+.Fasi
+. Selezionare menu:Storage[Pools & Volume Groups] (Storage[Pools & Volume Groups])
+. Fare clic sul menu:Create[Pool] (Crea[Pool])
++
+Viene visualizzata la finestra di dialogo *Crea pool*.
+
+. Digitare un nome per il pool.
+. *Opzionale:* se si dispone di più di un tipo di disco nell'array di storage, selezionare il tipo di disco che si desidera utilizzare.
++
+La tabella dei risultati elenca tutti i pool possibili che è possibile creare.
+
+. Selezionare il pool candidato che si desidera utilizzare in base alle seguenti caratteristiche, quindi fare clic su *Create* (Crea).
+
+
+[cols="2*"]
+|===
+| Caratteristica | Utilizzare 
+
+
+ a| 
+Capacità libera
+ a| 
+Mostra la capacità libera del pool Candidate in GiB. Selezionare un pool candidato con la capacità adatta alle esigenze di storage dell'applicazione.
+
+Anche la capacità di conservazione (spare) viene distribuita in tutto il pool e non fa parte della capacità libera.
+
+
+
+ a| 
+Totale dischi
+ a| 
+Mostra il numero di dischi disponibili nel pool Candidate.
+
+System Manager riserva automaticamente il maggior numero possibile di dischi per la capacità di conservazione (per ogni sei dischi in un pool, System Manager riserva un disco per la capacità di conservazione).
+
+Quando si verifica un guasto al disco, la capacità di conservazione viene utilizzata per conservare i dati ricostruiti.
+
+
+
+ a| 
+Sicuro
+ a| 
+Indica se il pool candidato è costituito interamente da dischi con funzionalità di protezione, che possono essere dischi con crittografia completa del disco (FDE) o dischi FIPS (Federal Information Processing Standard).
+
+* È possibile proteggere il pool con Drive Security, ma tutti i dischi devono essere in grado di utilizzare questa funzione in modo sicuro.
+* Se si desidera creare un pool solo FDE, cercare *Yes - FDE* nella colonna Secure-capable. Se si desidera creare un pool solo FIPS, cercare *Yes - FIPS* nella colonna Secure-capable.
+* È possibile creare un pool composto da dischi che possono o non possono essere sicuri o che sono una combinazione di livelli di sicurezza. Se i dischi del pool includono dischi che non sono sicuri, non è possibile rendere il pool sicuro.
+
+
+
+
+ a| 
+Abilitare la sicurezza?
+ a| 
+Fornisce l'opzione per attivare la funzione Drive Security con dischi sicuri. Se il pool è protetto ed è stata creata una chiave di sicurezza, è possibile attivare la protezione selezionando la casella di controllo.
+
+[NOTE]
+====
+L'unico modo per rimuovere Drive Security dopo averlo attivato è eliminare il pool e cancellare i dischi.
+
+====
+
+
+ a| 
+Compatibile CON DA
+ a| 
+Indica se Data Assurance (da) è disponibile per questo candidato del pool. DA controlla e corregge gli errori che potrebbero verificarsi durante il trasferimento dei dati attraverso i controller fino ai dischi.
+
+Se si desidera utilizzare da, selezionare un pool che supporti da. Questa opzione è disponibile solo se la funzione da è stata attivata.
+
+Un pool può contenere dischi che supportano da o non da, ma tutti i dischi devono essere in grado di utilizzare questa funzione.
+
+
+
+ a| 
+Protezione contro la perdita di shelf
+ a| 
+Mostra se è disponibile la protezione contro la perdita di shelf.
+
+La protezione contro la perdita di shelf garantisce l'accessibilità ai dati sui volumi di un pool se si verifica una perdita totale di comunicazione con un singolo shelf di dischi.
+
+
+
+ a| 
+Protezione in caso di perdita del cassetto
+ a| 
+Mostra se è disponibile la protezione contro le perdite dei cassetti, fornita solo se si utilizza uno shelf di dischi che contiene cassetti.
+
+La protezione contro la perdita dei cassetti garantisce l'accessibilità ai dati sui volumi in un pool se si verifica una perdita totale di comunicazione con un singolo cassetto in uno shelf di dischi.
+
+|===

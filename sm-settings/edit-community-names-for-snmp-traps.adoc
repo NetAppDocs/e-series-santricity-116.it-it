@@ -1,0 +1,41 @@
+---
+permalink: sm-settings/edit-community-names-for-snmp-traps.html 
+sidebar: sidebar 
+keywords: edit, community, names, snmp traps, destination 
+summary: È possibile modificare i nomi di comunità per i trap SNMP e associare un nome di comunità diverso a una destinazione dei trap SNMP. 
+---
+= Modificare i nomi di comunità per i trap SNMP
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile modificare i nomi di comunità per i trap SNMP e associare un nome di comunità diverso a una destinazione dei trap SNMP.
+
+.Prima di iniziare
+È necessario creare un nome di comunità composto solo da caratteri ASCII stampabili. Il nome di comunità, che è una stringa che agisce come una password per i server di rete, viene creato da un amministratore di rete.
+
+.Fasi
+. Selezionare *menu:Impostazioni[Avvisi]*.
+. Selezionare la scheda *SNMP*.
++
+Le destinazioni trap e i nomi di comunità vengono visualizzati nella tabella.
+
+. Modificare i nomi delle community come segue:
++
+** Per modificare un nome di comunità, selezionare *Configura community*. Immettere il nuovo nome di comunità, quindi fare clic su *Salva*. I nomi di comunità possono essere costituiti solo da caratteri ASCII stampabili.
+** Per associare un nome di comunità a una nuova destinazione trap, selezionare il nome della community dalla tabella, quindi fare clic sull'icona *Edit* (matita) all'estrema destra. Dall'elenco a discesa Community Name (Nome comunità), selezionare un nuovo nome di comunità per una destinazione trap SNMP, quindi fare clic sull'icona *Save* (Salva) (segno di spunta).
++
+[NOTE]
+====
+Per annullare le modifiche, selezionare l'icona *Annulla* (X).
+
+====
+
+
+
+
+.Risultati
+La scheda *SNMP* della pagina *Alerts* visualizza le community aggiornate.

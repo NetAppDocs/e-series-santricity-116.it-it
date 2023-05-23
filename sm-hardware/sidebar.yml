@@ -1,0 +1,141 @@
+---
+section: sm-hardware
+title: Hardware
+entries:
+- title: Shelf
+  entries:
+  - title: Concetti
+    entries:
+    - title: Panoramica della pagina hardware
+      url: "/sm-hardware/hardware-page-overview.html"
+    - title: Terminologia hardware
+      url: "/sm-hardware/hardware-terminology.html"
+  - title: Come fare
+    entries:
+    - title: Visualizza i componenti hardware
+      url: "/sm-hardware/view-hardware-components.html"
+    - title: Mostra o nasconde lo stato del componente
+      url: "/sm-hardware/show-or-hide-component-status.html"
+    - title: Consente di passare dalla vista anteriore a quella posteriore e viceversa
+      url: "/sm-hardware/switch-between-front-and-back-views.html"
+    - title: Modificare l'ordine di visualizzazione degli shelf
+      url: "/sm-hardware/change-view-order-of-shelves.html"
+    - title: Accendere la luce di posizionamento degli scaffali
+      url: "/sm-hardware/turn-on-shelf-locator-light.html"
+    - title: Modificare gli ID degli shelf
+      url: "/sm-hardware/change-shelf-ids.html"
+    - title: Visualizzare lo stato e le impostazioni dei componenti dello shelf
+      url: "/sm-hardware/view-shelf-component-status-and-settings.html"
+    - title: Aggiornare i cicli di apprendimento della batteria
+      url: "/sm-hardware/update-battery-learn-cycles.html"
+  - title: FAQ
+    entries:
+    - title: Che cos'è la protezione contro la perdita di shelf e la perdita di cassetto?
+      url: "/sm-hardware/what-is-shelf-loss-protection-and-drawer-loss-protection.html"
+    - title: Quali sono i cicli di apprendimento della batteria?
+      url: "/sm-hardware/what-are-battery-learn-cycles.html"
+- title: Controller
+  entries:
+  - title: Concetti
+    entries:
+    - title: Terminologia del controller
+      url: "/sm-hardware/controller-terminology.html"
+    - title: stati del controller
+      url: "/sm-hardware/controller-states.html"
+    - title: Considerazioni per l'assegnazione degli indirizzi IP
+      url: "/sm-hardware/considerations-for-assigning-ip-addresses.html"
+  - title: Come fare
+    entries:
+    - title: Configurare la porta di gestione
+      url: "/sm-hardware/configure-management-ports.html"
+    - title: Configurare le porte iSCSI
+      url: "/sm-hardware/configure-iscsi-ports-hardware.html"
+    - title: Configurare iSER su porte InfiniBand
+      url: "/sm-hardware/configure-iser-over-infiniband-ports-hardware.html"
+    - title: Configurare NVMe sulle porte InfiniBand
+      url: "/sm-hardware/configure-nvme-over-infiniband-ports-hardware.html"
+    - title: Configurare NVMe sulle porte RoCE
+      url: "/sm-hardware/configure-nvme-over-roce-ports-hardware.html"
+    - title: Configurare gli indirizzi del server NTP
+      url: "/sm-hardware/configure-ntp-server-addresses.html"
+    - title: Configurare gli indirizzi del server DNS
+      url: "/sm-hardware/configure-dns-server-addresses.html"
+    - title: Visualizzare le impostazioni del controller
+      url: "/sm-hardware/view-controller-settings.html"
+    - title: Consenti accesso remoto
+      url: "/sm-hardware/allow-remote-login.html"
+    - title: Posizionare il controller online
+      url: "/sm-hardware/place-controller-online.html"
+    - title: Mettere il controller offline
+      url: "/sm-hardware/place-controller-offline.html"
+    - title: Impostare il controller in modalità di servizio
+      url: "/sm-hardware/place-controller-in-service-mode.html"
+    - title: Ripristinare (riavviare) il controller
+      url: "/sm-hardware/reset-reboot-controller.html"
+  - title: FAQ
+    entries:
+    - title: Che cos'è la negoziazione automatica?
+      url: "/sm-hardware/what-is-auto-negotiation.html"
+    - title: Cos'è la configurazione automatica degli indirizzi IPv6 senza stato?
+      url: "/sm-hardware/what-is-ipv6-stateless-address-auto-configuration.html"
+    - title: 'Quale scegliere: DHCP o configurazione manuale?'
+      url: "/sm-hardware/which-do-i-choose-dhcp-or-manual-configuration.html"
+    - title: Che cos'è un server DHCP?
+      url: "/sm-hardware/what-is-a-dhcp-server.html"
+    - title: Come si configura il server DHCP?
+      url: "/sm-hardware/how-do-i-configure-my-dhcp-server.html"
+    - title: Perché è necessario modificare la configurazione di rete del controller?
+      url: "/sm-hardware/why-do-i-need-to-change-the-controller-network-configuration.html"
+    - title: Dove è possibile ottenere la configurazione di rete?
+      url: "/sm-hardware/where-do-i-get-the-network-configuration.html"
+    - title: Quali sono le risposte PING di ICMP?
+      url: "/sm-hardware/what-are-icmp-ping-responses.html"
+    - title: Quando è necessario aggiornare la configurazione della porta o il server
+        iSNS dal server DHCP?
+      url: "/sm-hardware/when-should-i-refresh-the-port-configuration-or-the-isns-server-from-the-dhcp-server.html"
+    - title: Cosa devo fare dopo aver configurato le porte di gestione?
+      url: "/sm-hardware/what-should-i-do-after-configuring-the-management-ports.html"
+- title: Dischi
+  entries:
+  - title: Concetti
+    entries:
+    - title: Gestione della terminologia
+      url: "/sm-hardware/drive-terminology.html"
+    - title: stati del disco
+      url: "/sm-hardware/drive-states.html"
+    - title: Dischi a stato solido (SSD)
+      url: "/sm-hardware/solid-state-disks-ssds.html"
+    - title: Dischi hot spare
+      url: "/sm-hardware/hot-spare-drives.html"
+  - title: Come fare
+    entries:
+    - title: Limitare la vista del disco
+      url: "/sm-hardware/limit-the-drive-view.html"
+    - title: Accendere la spia di individuazione del disco
+      url: "/sm-hardware/turn-on-drive-locator-light.html"
+    - title: Visualizzare lo stato e le impostazioni del disco
+      url: "/sm-hardware/view-drive-status-and-settings.html"
+    - title: Sostituire l'unità in modo logico
+      url: "/sm-hardware/replace-drive-logically-hardware.html"
+    - title: Ricostruire il disco manualmente
+      url: "/sm-hardware/reconstruct-drive-manually.html"
+    - title: Inizializzare (formattare) il disco
+      url: "/sm-hardware/initialize-format-drive.html"
+    - title: Disco guasto
+      url: "/sm-hardware/fail-drive.html"
+    - title: Assegnare hot spare
+      url: "/sm-hardware/assign-hot-spares-hardware.html"
+    - title: Annulla assegnazione hot spare
+      url: "/sm-hardware/unassign-hot-spares.html"
+    - title: Cancellare l'unità abilitata per la protezione
+      url: "/sm-hardware/erase-drive.html"
+    - title: Sbloccare o ripristinare i dischi NVMe bloccati
+      url: "/sm-hardware/unlock-or-reset-a-locked-nvme-drive.html"
+  - title: FAQ
+    entries:
+    - title: Che cos'è la capacità di conservazione?
+      url: "/sm-hardware/what-is-preservation-capacity.html"
+    - title: Perché dovrei sostituire logicamente un disco?
+      url: "/sm-hardware/why-would-i-logically-replace-a-drive.html"
+    - title: Dove è possibile visualizzare lo stato di un disco in fase di ricostruzione?
+      url: "/sm-hardware/where-can-i-view-the-status-of-a-drive-undergoing-reconstruction.html"

@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/workflow-for-creating-volumes.html 
+sidebar: sidebar 
+keywords: santricity, system, manager, create, can, volumes, following, steps 
+summary: In Gestore di sistema di SANtricity, è possibile creare volumi seguendo questa procedura. 
+---
+= Workflow per la creazione di volumi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+In Gestore di sistema di SANtricity, è possibile creare volumi seguendo questa procedura.
+
+image::../media/sam1130-flw-volumes-create.gif[creazione di volumi flw sam1130]

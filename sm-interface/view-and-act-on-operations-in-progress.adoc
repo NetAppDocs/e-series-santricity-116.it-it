@@ -1,0 +1,38 @@
+---
+permalink: sm-interface/view-and-act-on-operations-in-progress.html 
+sidebar: sidebar 
+keywords: view, action, long-run, operations, progress 
+summary: 'Per visualizzare e intraprendere azioni sulle operazioni a esecuzione prolungata, utilizzare la pagina Operations in Progress (operazioni in corso).' 
+---
+= Visualizzare e agire sulle operazioni in corso
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Per visualizzare e intraprendere azioni sulle operazioni a esecuzione prolungata, utilizzare la pagina Operations in Progress (operazioni in corso).
+
+.A proposito di questa attività
+Per ciascuna operazione elencata nella pagina Operations in Progress (operazioni in corso), vengono visualizzate una percentuale di completamento e il tempo stimato rimanente per completare l'operazione. In alcuni casi, è possibile interrompere un'operazione o posizionarla con priorità più alta o più bassa. È inoltre possibile cancellare un'operazione di copia del volume completata dall'elenco.
+
+.Fasi
+. Nella pagina *Home*, selezionare *Mostra operazioni in corso*.
++
+Viene visualizzata la pagina *operazioni in corso*.
+
+. Se lo si desidera, utilizzare i collegamenti nella colonna *azioni* per interrompere o modificare la priorità di un'operazione.
++
+[CAUTION]
+====
+Leggere tutto il testo di avviso fornito nelle finestre di dialogo, in particolare quando si interrompe un'operazione.
+
+====
++
+È possibile interrompere un'operazione di copia di un volume o modificarne la priorità.
+
+. Una volta completata l'operazione di copia di un volume, selezionare *Clear* per rimuoverlo dall'elenco.
++
+Al termine di un'operazione, nella parte superiore della pagina *Home* vengono visualizzati un messaggio informativo e un'icona con la chiave gialla. Questo messaggio include un collegamento che consente di annullare l'operazione dalla pagina *operazioni in corso*.
+
+

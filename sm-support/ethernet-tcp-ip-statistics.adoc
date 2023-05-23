@@ -1,0 +1,192 @@
+---
+permalink: sm-support/ethernet-tcp-ip-statistics.html 
+sidebar: sidebar 
+keywords: ethernet, statistics, definition, statistics, transmitted, byte, expired 
+summary: Statistiche Ethernet TCP/IP 
+---
+= Statistiche Ethernet TCP/IP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+Quando si seleziona Ethernet TCP/IP statistics (Statistiche TCP/IP Ethernet), vengono visualizzate le statistiche TCP in questa tabella. È possibile visualizzare ciascuna di queste statistiche come statistiche raw o come statistiche baseline.
+
+[cols="2*"]
+|===
+| Statistiche | Definizione 
+
+
+ a| 
+TXS
+ a| 
+Numero di segmenti trasmessi
+
+
+
+ a| 
+TXB
+ a| 
+Numero di byte trasmessi
+
+
+
+ a| 
+RTxTE
+ a| 
+Timer di ritrasmissione scaduto
+
+
+
+ a| 
+TxDACK
+ a| 
+Trasmettere il conteggio ACK ritardato
+
+
+
+ a| 
+TxACK
+ a| 
+Trasmettere il numero ACK
+
+
+
+ a| 
+Rxs
+ a| 
+Numero di segmenti ricevuti
+
+
+
+ a| 
+RXB
+ a| 
+Numero di byte ricevuti
+
+
+
+ a| 
+RxDACK
+ a| 
+Ricevuto conteggio ACK duplicato
+
+
+
+ a| 
+RxACK
+ a| 
+Conteggio ACK ricevuto
+
+
+
+ a| 
+RxSEC
+ a| 
+Numero di errori di segmento ricevuti
+
+
+
+ a| 
+RxSOOC
+ a| 
+Numero di segmenti fuori ordine ricevuti
+
+
+
+ a| 
+RxWP
+ a| 
+Conteggio delle sonde a finestra ricevute
+
+
+
+ a| 
+RxLU
+ a| 
+Numero di aggiornamenti finestra ricevuti
+
+|===
+Quando si seleziona Ethernet TCP/IP statistics (Statistiche TCP/IP Ethernet), vengono visualizzate le statistiche IP in questa tabella.
+
+[cols="2*"]
+|===
+| Statistiche | Definizione 
+
+
+ a| 
+TxP
+ a| 
+Numero di pacchetti trasmessi
+
+
+
+ a| 
+TXB
+ a| 
+Numero di byte trasmessi
+
+
+
+ a| 
+TxF
+ a| 
+Numero di frammenti trasmessi
+
+
+
+ a| 
+RXP
+ a| 
+Numero di pacchetti ricevuti. Selezionare *Show IPv4* (Mostra IPv4) per visualizzare il numero di pacchetti IPv4 ricevuti. Selezionare *Show IPv6* (Mostra IPv6) per visualizzare il numero di pacchetti IPv6 ricevuti.
+
+
+
+ a| 
+RXB
+ a| 
+Numero di byte ricevuti
+
+
+
+ a| 
+RxF
+ a| 
+Numero di frammenti ricevuti
+
+
+
+ a| 
+RxPE
+ a| 
+Numero di errori pacchetti ricevuti
+
+
+
+ a| 
+DR
+ a| 
+Conteggio riassemblaggio Datagram
+
+
+
+ a| 
+DRE-OLFC
+ a| 
+Errore di riassemblaggio Datagram, numero di frammenti sovrapposti
+
+
+
+ a| 
+DRE-OOFC
+ a| 
+Errore di riassemblaggio Datagram, numero di frammenti fuori servizio
+
+
+
+ a| 
+DRE-TOC
+ a| 
+Errore di riassemblaggio Datagram, conteggio timeout
+
+|===

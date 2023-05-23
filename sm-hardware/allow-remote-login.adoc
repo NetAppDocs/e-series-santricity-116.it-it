@@ -1,0 +1,35 @@
+---
+permalink: sm-hardware/allow-remote-login.html 
+sidebar: sidebar 
+keywords: remote, login, lan, outside, ssh session, change settings, controller 
+summary: 'L"accesso remoto consente agli utenti esterni alla rete locale di avviare una sessione SSH e modificare le impostazioni del controller.' 
+---
+= Consenti accesso remoto
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+L'accesso remoto consente agli utenti esterni alla rete locale di avviare una sessione SSH e modificare le impostazioni del controller.
+
+[CAUTION]
+====
+*Rischio di sicurezza* -- per motivi di sicurezza, abilitare l'accesso remoto per l'utilizzo solo da parte del supporto tecnico.
+
+====
+.Fasi
+. Selezionare *hardware*.
+. Se la figura mostra i dischi, fare clic su *Mostra retro dello shelf*.
++
+Il grafico cambia per mostrare i controller invece dei dischi.
+
+. Fare clic sul controller per il quale si desidera attivare l'accesso remoto.
++
+Viene visualizzato il menu di scelta rapida del controller.
+
+. Selezionare *Change remote login* (Modifica accesso remoto) e confermare che si desidera eseguire l'operazione.
+
+
+.Risultati
+Al termine della risoluzione dei problemi, seguire la stessa procedura per disattivare l'accesso remoto. La disattivazione dell'accesso remoto termina tutte le sessioni SSH correnti e rifiuta le nuove richieste di accesso.

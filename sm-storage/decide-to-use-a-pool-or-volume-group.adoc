@@ -1,0 +1,149 @@
+---
+permalink: sm-storage/decide-to-use-a-pool-or-volume-group.html 
+sidebar: sidebar 
+keywords: create, volumes, using, either, pool, group, selection, depend, primarily, key, storage, requirements, expect, workload, performance, data, protection 
+summary: È possibile creare volumi utilizzando un pool o un gruppo di volumi. La scelta migliore dipende principalmente dai principali requisiti di storage, come il carico di lavoro i/o previsto, i requisiti di performance e i requisiti di protezione dei dati. 
+---
+= Decidere se utilizzare un pool o un gruppo di volumi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile creare volumi utilizzando un pool o un gruppo di volumi. La scelta migliore dipende principalmente dai principali requisiti di storage, come il carico di lavoro i/o previsto, i requisiti di performance e i requisiti di protezione dei dati.
+
+
+
+== Motivi per scegliere un pool o un gruppo di volumi
+
+*Scegliere un pool*
+
+* Se hai bisogno di una ricostruzione più rapida dei dischi e di un'amministrazione dello storage semplificata, richiedono volumi thin e/o un carico di lavoro altamente casuale.
+* Se si desidera distribuire i dati per ciascun volume in modo casuale su un set di dischi che compongono il pool.
++
+Non è possibile impostare o modificare il livello RAID dei pool o dei volumi nei pool. I pool utilizzano il livello RAID 6.
+
+
+
+*Scegliere un gruppo di volumi*
+
+* Se hai bisogno della massima larghezza di banda del sistema, della possibilità di ottimizzare le impostazioni dello storage e di un carico di lavoro altamente sequenziale.
+* Se si desidera distribuire i dati tra i dischi in base a un livello RAID. È possibile specificare il livello RAID quando si crea il gruppo di volumi.
+* Se si desidera scrivere i dati per ciascun volume in sequenza nel set di dischi che compongono il gruppo di volumi.
+
+
+[NOTE]
+====
+Poiché i pool possono coesistere con i gruppi di volumi, un array di storage può contenere sia pool che gruppi di volumi.
+
+====
+
+
+== Differenze di funzionalità tra pool e gruppi di volumi
+
+Nella tabella seguente viene fornito un confronto delle funzionalità tra gruppi di volumi e pool.
+
+[cols="3*"]
+|===
+| Utilizzare | Piscina | Gruppo di volumi 
+
+
+ a| 
+Carico di lavoro casuale
+ a| 
+Meglio
+ a| 
+Bene
+
+
+
+ a| 
+Carico di lavoro sequenziale
+ a| 
+Bene
+ a| 
+Meglio
+
+
+
+ a| 
+Tempo di ricostruzione del disco
+ a| 
+Più veloce
+ a| 
+Più lento
+
+
+
+ a| 
+Performance (modalità ottimale)
+ a| 
+Buona: Ideale per piccoli blocchi, carichi di lavoro casuali.
+ a| 
+Buona: Ideale per carichi di lavoro sequenziali a blocchi di grandi dimensioni
+
+
+
+ a| 
+Performance (modalità di ricostruzione del disco)
+ a| 
+Migliore: Di solito migliore di RAID 6
+ a| 
+Degradato: Calo delle performance fino al 40%
+
+
+
+ a| 
+Guasti a più dischi
+ a| 
+Maggiore protezione dei dati: Ricostruzioni più rapide e prioritarie
+ a| 
+Minore protezione dei dati: Ricostruzioni lente, maggiore rischio di perdita dei dati
+
+
+
+ a| 
+Aggiunta di unità
+ a| 
+Più veloce: Aggiungi al pool in tempo reale
+ a| 
+Più lento: Richiede un'operazione di espansione dinamica della capacità
+
+
+
+ a| 
+Supporto di thin volumi
+ a| 
+Sì
+ a| 
+No
+
+
+
+ a| 
+Supporto di Solid state Disk (SSD)
+ a| 
+Sì
+ a| 
+Sì
+
+
+
+ a| 
+Amministrazione semplificata
+ a| 
+Sì: Nessuna hot spare o impostazioni RAID da configurare
+ a| 
+No: È necessario allocare hot spare, configurare RAID
+
+
+
+ a| 
+Performance sintonizzabili
+ a| 
+No
+ a| 
+Sì
+
+|===

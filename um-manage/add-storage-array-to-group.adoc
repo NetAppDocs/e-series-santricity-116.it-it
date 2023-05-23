@@ -1,0 +1,22 @@
+---
+permalink: um-manage/add-storage-array-to-group.html 
+sidebar: sidebar 
+keywords: add, storage, array, to, group, manage, 
+summary: 'È possibile aggiungere uno o più array di storage a un gruppo creato dall"utente.' 
+---
+= Aggiungere array di storage al gruppo
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile aggiungere uno o più array di storage a un gruppo creato dall'utente.
+
+.Fasi
+. Dalla vista principale, selezionare *Gestisci*, quindi selezionare il gruppo a cui si desidera aggiungere gli array di storage.
+. Selezionare menu:Manage Groups[Add storage array to group] (Gestisci gruppi[Aggiungi array di storage al gruppo]).
+. Selezionare gli array di storage che si desidera aggiungere al gruppo.
+. Fare clic su *Aggiungi.*
+

@@ -1,0 +1,30 @@
+---
+permalink: sm-settings/edit-key-management-server-settings.html 
+sidebar: sidebar 
+keywords: configuration, external, key management, edit, server, settings, time 
+summary: Se è stata configurata la gestione esterna delle chiavi, è possibile visualizzare e modificare le impostazioni del server di gestione delle chiavi in qualsiasi momento. 
+---
+= Modificare le impostazioni del server di gestione delle chiavi
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se è stata configurata la gestione esterna delle chiavi, è possibile visualizzare e modificare le impostazioni del server di gestione delle chiavi in qualsiasi momento.
+
+.Prima di iniziare
+È necessario configurare la gestione esterna delle chiavi.
+
+.Fasi
+. Selezionare *menu:Impostazioni[sistemi]*.
+. In *Security key management*, selezionare *View/Edit Key Management Server Settings* (Visualizza/Modifica impostazioni del server di gestione delle chiavi).
+. Modificare le informazioni nei seguenti campi:
++
+** *Indirizzo del server di gestione delle chiavi* -- inserire il nome di dominio completo o l'indirizzo IP (IPv4 o IPv6) del server utilizzato per la gestione delle chiavi.
+** *Numero della porta KMIP* -- inserire il numero della porta utilizzata per le comunicazioni KMIP (Key Management Interoperability Protocol).
+
+
+. Fare clic su *Save* (Salva).
+

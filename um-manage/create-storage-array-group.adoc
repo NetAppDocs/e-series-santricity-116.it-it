@@ -1,0 +1,22 @@
+---
+permalink: um-manage/create-storage-array-group.html 
+sidebar: sidebar 
+keywords: create, storage, array, group, 
+summary: È possibile creare gruppi di storage e quindi aggiungere array di storage ai gruppi. Il gruppo di storage definisce quali dischi forniscono lo storage che costituisce il volume. 
+---
+= Creare un gruppo di array di storage
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile creare gruppi di storage e quindi aggiungere array di storage ai gruppi. Il gruppo di storage definisce quali dischi forniscono lo storage che costituisce il volume.
+
+.Fasi
+. Dalla pagina *Manage*, selezionare menu:Manage Groups[Create storage array group] (Gestisci gruppi[Crea gruppo array di storage]).
+. Nel campo *Nome*, digitare un nome per il nuovo gruppo.
+. Selezionare gli array di storage che si desidera aggiungere al nuovo gruppo.
+. Fare clic su *Create* (Crea).
+

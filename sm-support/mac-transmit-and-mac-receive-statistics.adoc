@@ -1,0 +1,234 @@
+---
+permalink: sm-support/mac-transmit-and-mac-receive-statistics.html 
+sidebar: sidebar 
+keywords: transmit, receive, statistics, ethernet, transmit 
+summary: STATISTICHE DI trasmissione MAC e ricezione MAC 
+---
+= STATISTICHE DI trasmissione MAC e ricezione MAC
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+Quando si seleziona Ethernet MAC statistics (Statistiche MAC Ethernet), vengono visualizzate queste statistiche di trasmissione MAC. È possibile visualizzare ciascuna di queste statistiche come statistiche raw o come statistiche baseline.
+
+[cols="2*"]
+|===
+| Statistiche | Definizione 
+
+
+ a| 
+F
+ a| 
+Numero di fotogrammi
+
+
+
+ a| 
+B
+ a| 
+Numero di byte
+
+
+
+ a| 
+MF
+ a| 
+Numero di frame multicast
+
+
+
+ a| 
+BF
+ a| 
+Numero di frame di broadcast
+
+
+
+ a| 
+PF
+ a| 
+Mettere in pausa il numero di fotogrammi
+
+
+
+ a| 
+CF
+ a| 
+Controllo del numero di frame
+
+
+
+ a| 
+FDF
+ a| 
+Conteggio dei frame rasserral
+
+
+
+ a| 
+FED
+ a| 
+Numero di posticipi frame in eccesso
+
+
+
+ a| 
+FLC
+ a| 
+Numero di collisioni frame late
+
+
+
+ a| 
+FA
+ a| 
+Conteggio interruzioni frame
+
+
+
+ a| 
+FSC
+ a| 
+Numero di collisioni singole dei fotogrammi
+
+
+
+ a| 
+FMC
+ a| 
+Numero di collisioni frame multiple
+
+
+
+ a| 
+FC
+ a| 
+Conteggio collisioni fotogrammi
+
+
+
+ a| 
+FDR
+ a| 
+Numero di frame abbandonati
+
+
+
+ a| 
+JF
+ a| 
+Numero di frame jumbo
+
+|===
+Quando si seleziona Ethernet MAC statistics (Statistiche MAC Ethernet), vengono visualizzate queste statistiche di ricezione MAC.
+
+[cols="2*"]
+|===
+| Statistiche | Definizione 
+
+
+ a| 
+F
+ a| 
+Numero di fotogrammi
+
+
+
+ a| 
+B
+ a| 
+Numero di byte
+
+
+
+ a| 
+MF
+ a| 
+Numero di frame multicast
+
+
+
+ a| 
+BF
+ a| 
+Numero di frame di broadcast
+
+
+
+ a| 
+PF
+ a| 
+Mettere in pausa il numero di fotogrammi
+
+
+
+ a| 
+CF
+ a| 
+Controllo del numero di frame
+
+
+
+ a| 
+FLE
+ a| 
+Conteggio errori di lunghezza del frame
+
+
+
+ a| 
+FD
+ a| 
+Numero di frame abbandonati
+
+
+
+ a| 
+FCRCE
+ a| 
+Conteggio errori CRC frame
+
+
+
+ a| 
+A PAGAMENTO
+ a| 
+Conteggio errori di codifica frame
+
+
+
+ a| 
+LFE
+ a| 
+Elevato numero di errori di frame
+
+
+
+ a| 
+SFE
+ a| 
+Numero di errori frame ridotto
+
+
+
+ a| 
+J
+ a| 
+Conteggio Jabber
+
+
+
+ a| 
+UCC
+ a| 
+Numero di frame di controllo sconosciuto
+
+
+
+ a| 
+CSE
+ a| 
+Conteggio errori di rilevamento portante
+
+|===

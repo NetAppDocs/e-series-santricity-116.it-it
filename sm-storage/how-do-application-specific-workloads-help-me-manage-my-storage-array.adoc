@@ -1,0 +1,16 @@
+---
+permalink: sm-storage/how-do-application-specific-workloads-help-me-manage-my-storage-array.html 
+sidebar: sidebar 
+keywords: application, software, server, exchange, define, one, workload, support, each, system, manager, automatically, recommend, volume, configuration, optimize, storage, characteristics, type, segment, size, controller, ownership, read, write, cache, include 
+summary: 'Un"applicazione è un software come SQL Server o Exchange. È possibile definire uno o più workload per supportare ciascuna applicazione. Per alcune applicazioni, System Manager consiglia automaticamente una configurazione del volume che ottimizzi lo storage. Caratteristiche come il tipo di i/o, la dimensione del segmento, la proprietà del controller e la cache di lettura e scrittura sono incluse nella configurazione del volume.' 
+---
+= In che modo i carichi di lavoro specifici dell'applicazione mi aiutano a gestire lo storage array?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Un'applicazione è un software come SQL Server o Exchange. È possibile definire uno o più workload per supportare ciascuna applicazione. Per alcune applicazioni, System Manager consiglia automaticamente una configurazione del volume che ottimizzi lo storage. Caratteristiche come il tipo di i/o, la dimensione del segmento, la proprietà del controller e la cache di lettura e scrittura sono incluse nella configurazione del volume.
+
+Le caratteristiche del volume del carico di lavoro specifico dell'applicazione determinano il modo in cui il carico di lavoro interagisce con i componenti dell'array di storage e aiutano a determinare le performance dell'ambiente in una determinata configurazione.

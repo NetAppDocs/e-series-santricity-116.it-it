@@ -1,0 +1,40 @@
+---
+permalink: sm-support/collect-drive-data.html 
+sidebar: sidebar 
+keywords: collect, log, data, drives, storage, array, send, file, technical, support, analysis, task 
+summary: 'È possibile raccogliere i dati di log da tutti i dischi dell"array di storage e inviare il file al supporto tecnico per l"analisi.' 
+---
+= Raccogliere i dati del disco
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile raccogliere i dati di log da tutti i dischi dell'array di storage e inviare il file al supporto tecnico per l'analisi.
+
+.A proposito di questa attività
+I dati del log sono costituiti da informazioni statistiche gestite da ciascuna unità dello storage array. Il supporto tecnico può utilizzare queste informazioni per analizzare le prestazioni dei dischi e per la risoluzione dei problemi che potrebbero verificarsi.
+
+[NOTE]
+====
+Eseguire questa operazione solo se richiesto dal supporto tecnico.
+
+====
+.Fasi
+. Selezionare menu:scheda Support[Support Center > Diagnostics].
+. Selezionare *Collect Drive Data*.
++
+Viene visualizzata una finestra di dialogo in cui sono elencati tutti i dischi dell'array di storage.
+
+. Nella prima colonna della tabella, è possibile selezionare le singole unità per le quali si desidera raccogliere i dati (fare clic sulla casella di controllo accanto a ciascuna unità) o selezionare tutte le unità (selezionare la casella di controllo nell'intestazione della tabella).
++
+Per trovare unità specifiche, è possibile ordinare le colonne o digitare i caratteri nella casella *Filter*.
+
+. Fare clic su *Collect*.
++
+Il file viene salvato nella cartella Download del browser con il nome `drive-data.7z`.
+
+. Seguire le istruzioni fornite dal supporto tecnico per inviare il file.
+

@@ -1,0 +1,61 @@
+---
+permalink: sm-support/controller-software-and-firmware-upgrades.html 
+sidebar: sidebar 
+keywords: can, upgrade, storage, array, software, firmware, latest, feature, bug, fixes 
+summary: È possibile aggiornare il software e il firmware dello storage array per ottenere le ultime funzionalità e correzioni di bug. 
+---
+= Aggiornamenti del software e del firmware del controller
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile aggiornare il software e il firmware dello storage array per ottenere le ultime funzionalità e correzioni di bug.
+
+
+
+== Componenti inclusi nell'aggiornamento del software del controller del sistema operativo SANtricity
+
+Diversi componenti dello storage array contengono software o hardware che è possibile aggiornare occasionalmente.
+
+* *Software di gestione* -- System Manager è il software che gestisce lo storage array.
+* *Controller firmware* -- il firmware del controller gestisce l'i/o tra host e volumi.
+* *Controller NVSRAM* -- Controller NVSRAM è un file controller che specifica le impostazioni predefinite per i controller.
+* *IOM firmware* -- il firmware del modulo i/o (IOM) gestisce la connessione tra un controller e uno shelf di dischi. Inoltre, monitora lo stato dei componenti.
+* *Software di supervisore* -- il software di supervisore è la macchina virtuale su un controller in cui viene eseguito il software.
+
+
+image::../media/sam1130-dwg-upgrade-firmware-locations.gif[posizioni del firmware di aggiornamento sam1130 dwg]
+
+^1^ shelf del controller; ^2^ shelf del disco; ^3^ Software, firmware del controller, NVSRAM del controller, Software del supervisore; ^4^ firmware del disco; ^5^ firmware IOM; ^6^ firmware del disco
+
+È possibile visualizzare le versioni correnti del software e del firmware nella finestra di dialogo *Software and firmware Inventory* (inventario software e firmware). Accedere al menu:Support[Upgrade Center], quindi fare clic sul collegamento *Software and firmware Inventory* (inventario software e firmware).
+
+Come parte del processo di aggiornamento, potrebbe essere necessario aggiornare anche il driver multipath/failover e/o HBA dell'host in modo che l'host possa interagire correttamente con i controller. Per determinare se questo è il caso, consultare la https://imt.netapp.com/matrix/#welcome["Tool di matrice di interoperabilità NetApp"^].
+
+
+
+== Quando interrompere i/O.
+
+Se lo storage array contiene due controller e si dispone di un driver multipath installato, lo storage array può continuare l'elaborazione dell'i/o durante l'aggiornamento. Durante l'aggiornamento, il controller A esegue il failover di tutti i volumi nel controller B, esegue l'upgrade, recupera i volumi e tutti i volumi del controller B, quindi aggiorna il controller B.
+
+
+
+== Verifica dello stato di salute prima dell'aggiornamento
+
+Durante il processo di aggiornamento viene eseguito un controllo dello stato di salute prima dell'aggiornamento. Il controllo dello stato di salute prima dell'aggiornamento valuta tutti i componenti dell'array di storage per assicurarsi che l'aggiornamento possa continuare. Le seguenti condizioni potrebbero impedire l'aggiornamento:
+
+* Dischi assegnati non riusciti
+* Hot spare in uso
+* Gruppi di volumi incompleti
+* Operazioni esclusive in esecuzione
+* Volumi mancanti
+* Controller in stato non ottimale
+* Numero eccessivo di eventi del registro eventi
+* Errore di convalida del database di configurazione
+* Dischi con versioni precedenti di DACstore
+
+
+È inoltre possibile eseguire il controllo dello stato di salute pre-aggiornamento separatamente senza eseguire un aggiornamento.

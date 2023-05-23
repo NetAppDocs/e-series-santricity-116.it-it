@@ -1,0 +1,27 @@
+---
+permalink: sm-interface/setup-wizard-overview.html 
+sidebar: sidebar 
+keywords: setup wizard, configure, storage, array, hardware, host, application workload, alert, autosupport 
+summary: Utilizzare la procedura guidata di installazione per configurare lo storage array, inclusi hardware, host, applicazioni, carichi di lavoro, Pool, avvisi e AutoSupport. 
+---
+= Panoramica dell'installazione guidata
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Utilizzare la procedura guidata di installazione per configurare lo storage array, inclusi hardware, host, applicazioni, carichi di lavoro, Pool, avvisi e AutoSupport.
+
+Quando si apre System Manager per la prima volta, viene avviata l'installazione guidata.
+
+L'installazione guidata richiede di eseguire le attività di configurazione di base, ad esempio assegnare un nome allo storage array, configurare gli host, selezionare le applicazioni e creare pool di storage.
+
+Se si annulla la procedura guidata, non è possibile avviarla di nuovo manualmente.
+
+La procedura guidata viene riavviata automaticamente quando si apre System Manager o si aggiorna il browser e viene soddisfatta almeno una delle seguenti condizioni:
+
+* Non vengono rilevati pool e gruppi di volumi.
+* Nessun carico di lavoro rilevato.
+* Nessuna notifica configurata.
+

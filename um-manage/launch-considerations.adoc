@@ -1,0 +1,22 @@
+---
+permalink: um-manage/launch-considerations.html 
+sidebar: sidebar 
+keywords: considerations, for, accessing, santricity, system, manager, 
+summary: 'È possibile selezionare uno o più array di storage e utilizzare l"opzione di avvio per aprire Gestione di sistema SANtricity quando si desidera configurare e gestire gli array di storage.' 
+---
+= Considerazioni per l'accesso a Gestore di sistema di SANtricity
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile selezionare uno o più array di storage e utilizzare l'opzione di avvio per aprire Gestione di sistema SANtricity quando si desidera configurare e gestire gli array di storage.
+
+Gestore di sistema SANtricity è un'applicazione integrata nel controller E2800 o E5700, collegata alla rete tramite una porta di gestione Ethernet.
+
+Gestore di sistema SANtricity include tutte le funzioni basate su array per gli array E2800 o E5700.
+
+Per accedere a Gestore di sistema di SANtricity, è necessario disporre di una connessione out-of-band a un client di gestione della rete con un browser Web.
+
+image::../media/single2800.gif[single2800]

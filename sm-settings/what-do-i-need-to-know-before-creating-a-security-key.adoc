@@ -1,0 +1,40 @@
+---
+permalink: sm-settings/what-do-i-need-to-know-before-creating-a-security-key.html 
+sidebar: sidebar 
+keywords: security, key, storage array, unauthorized access 
+summary: 'Una chiave di sicurezza viene condivisa da controller e dischi abilitati alla sicurezza all"interno di un array di storage. Se un disco abilitato alla protezione viene rimosso dall"array di storage, la chiave di sicurezza protegge i dati da accessi non autorizzati.' 
+---
+= Cosa occorre sapere prima di creare una chiave di sicurezza?
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Una chiave di sicurezza viene condivisa da controller e dischi abilitati alla sicurezza all'interno di un array di storage. Se un disco abilitato alla protezione viene rimosso dall'array di storage, la chiave di sicurezza protegge i dati da accessi non autorizzati.
+
+È possibile creare e gestire le chiavi di sicurezza utilizzando uno dei seguenti metodi:
+
+* Gestione interna delle chiavi nella memoria persistente del controller.
+* Gestione esterna delle chiavi su un server di gestione delle chiavi esterno.
+
+
+Prima di creare una chiave di sicurezza interna, eseguire le seguenti operazioni:
+
+. Installare unità sicure nell'array di storage. Questi dischi possono essere dischi FDE (Full Disk Encryption) o FIPS (Federal Information Processing Standard).
+. Assicurarsi che la funzione Drive Security sia attivata. Se necessario, contattare il fornitore dello storage per istruzioni sull'attivazione della funzione Drive Security.
+
+
+È quindi possibile creare una chiave di sicurezza interna, che implica la definizione di un identificatore e di una passphrase. L'identificatore è una stringa associata alla chiave di sicurezza e memorizzata sul controller e su tutti i dischi associati alla chiave. La password viene utilizzata per crittografare la chiave di sicurezza a scopo di backup. Al termine, la chiave di sicurezza viene memorizzata nel controller in una posizione non accessibile. È quindi possibile creare pool o gruppi di volumi abilitati per la protezione oppure attivare la protezione su gruppi di volumi e pool esistenti.
+
+Prima di creare una chiave di sicurezza esterna, eseguire le seguenti operazioni:
+
+. Installare unità sicure nell'array di storage. Questi dischi possono essere dischi FDE (Full Disk Encryption) o FIPS (Federal Information Processing Standard).
+. Assicurarsi che la funzione Drive Security sia attivata. Se necessario, contattare il fornitore dello storage per istruzioni sull'attivazione della funzione Drive Security.
+. Completare e scaricare una CSR (Certificate Signing Request) client per l'autenticazione tra lo storage array e il server di gestione delle chiavi. Accedere a *menu:Impostazioni[certificati > Gestione chiavi > CSR completa]*.
+. Creare e scaricare un certificato client dal server di gestione delle chiavi utilizzando il file CSR scaricato.
+. Assicurarsi che il certificato client e una copia del certificato per il server di gestione delle chiavi siano disponibili sull'host locale.
+
+
+È quindi possibile creare una chiave esterna che preveda la definizione dell'indirizzo IP del server di gestione delle chiavi e del numero di porta utilizzato per le comunicazioni KMIP. Durante questo processo, vengono caricati anche i file dei certificati. Al termine, il sistema si connette al server di gestione delle chiavi con le credenziali immesse. È quindi possibile creare pool o gruppi di volumi abilitati per la protezione oppure attivare la protezione su gruppi di volumi e pool esistenti.

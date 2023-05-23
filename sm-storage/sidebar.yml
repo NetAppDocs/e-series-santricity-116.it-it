@@ -1,0 +1,430 @@
+---
+section: sm-storage
+title: Storage
+entries:
+- title: Pool e gruppi di volumi
+  entries:
+  - title: Concetti
+    entries:
+    - title: Funzionamento di pool e gruppi di volumi
+      url: "/sm-storage/how-pools-and-volume-groups-work.html"
+    - title: Terminologia relativa alla capacità
+      url: "/sm-storage/capacity-terminology.html"
+    - title: Come funziona la capacità riservata
+      url: "/sm-storage/how-reserved-capacity-works.html"
+    - title: Come funziona SSD cache
+      url: "/sm-storage/how-ssd-cache-works.html"
+    - title: Limitazioni della cache SSD
+      url: "/sm-storage/ssd-cache-restrictions.html"
+    - title: Decidere se utilizzare un pool o un gruppo di volumi
+      url: "/sm-storage/decide-to-use-a-pool-or-volume-group.html"
+    - title: Confronto funzionale di pool e gruppi di volumi
+      url: "/sm-storage/functional-comparison-of-pools-and-volume-groups.html"
+    - title: Creazione automatica e manuale del pool
+      url: "/sm-storage/automatic-versus-manual-pool-creation.html"
+  - title: Come fare
+    entries:
+    - title: Creare pool e gruppi di volumi
+      entries:
+      - title: Crea pool automaticamente
+        url: "/sm-storage/create-pool-automatically.html"
+      - title: Creare il pool manualmente
+        url: "/sm-storage/create-pool-manually.html"
+      - title: Creare un gruppo di volumi
+        url: "/sm-storage/create-volume-group.html"
+      - title: Creazione della cache SSD
+        url: "/sm-storage/create-ssd-cache.html"
+      - title: Aggiungere capacità a un pool o a un gruppo di volumi
+        url: "/sm-storage/add-capacity-to-a-pool-or-volume-group.html"
+    - title: Gestione di pool, gruppi di volumi e cache SSD
+      entries:
+      - title: Modificare le impostazioni di configurazione di un pool
+        url: "/sm-storage/change-configuration-settings-for-a-pool.html"
+      - title: Modificare le impostazioni della cache SSD
+        url: "/sm-storage/change-ssd-cache-settings.html"
+      - title: Modificare le impostazioni di configurazione di un gruppo di volumi
+        url: "/sm-storage/change-configuration-settings-for-a-volume-group.html"
+      - title: Visualizzare le statistiche della cache SSD
+        url: "/sm-storage/view-ssd-cache-statistics.html"
+      - title: Controllare la ridondanza del volume
+        url: "/sm-storage/check-volume-redundancy.html"
+      - title: Eliminare pool o gruppo di volumi
+        url: "/sm-storage/delete-pool-or-volume-group.html"
+      - title: Consolidare la capacità libera per un gruppo di volumi
+        url: "/sm-storage/consolidate-volume-group-free-capacity.html"
+      - title: Esportare/importare gruppi di volumi
+        url: "/sm-storage/export-import-volume-groups.html"
+    - title: Gestire i dischi
+      entries:
+      - title: Attivare le luci di individuazione in un pool, un gruppo di volumi
+          o una cache SSD
+        url: "/sm-storage/turn-on-locator-lights-in-a-pool-volume-group-or-ssd-cache.html"
+      - title: Rimuovere la capacità da un pool o da una cache SSD
+        url: "/sm-storage/remove-capacity-from-a-pool-or-ssd-cache.html"
+      - title: Abilitare la protezione per un pool o un gruppo di volumi
+        url: "/sm-storage/enable-security.html"
+      - title: Assegnare hot spare
+        url: "/sm-storage/assign-hot-spares-storage.html"
+      - title: Sostituire l'unità in modo logico
+        url: "/sm-storage/replace-drive-logically-storage.html"
+    - title: Gestire la capacità riservata
+      entries:
+      - title: Aumentare la capacità riservata
+        url: "/sm-storage/increase-reserved-capacity.html"
+      - title: Ridurre la capacità riservata
+        url: "/sm-storage/decrease-reserved-capacity.html"
+      - title: Modificare le impostazioni di capacità riservata per un gruppo di snapshot
+        url: "/sm-storage/change-the-reserved-capacity-settings-for-a-snapshot-group.html"
+      - title: Modificare le impostazioni di capacità riservata per un volume di snapshot
+        url: "/sm-storage/change-the-reserved-capacity-settings-for-a-snapshot-volume.html"
+      - title: Modificare le impostazioni di capacità riservata per un volume membro
+          del gruppo di coerenza
+        url: "/sm-storage/change-the-reserved-capacity-settings-for-a-consistency-group-member-volume.html"
+      - title: Modificare le impostazioni di capacità riservata per un volume di coppia
+          mirrorata
+        url: "/sm-storage/change-the-reserved-capacity-settings-for-a-mirrored-pair-volume.html"
+      - title: Annulla l'immagine snapshot in sospeso
+        url: "/sm-storage/cancel-pending-snapshot-image.html"
+      - title: Elimina gruppo di snapshot
+        url: "/sm-storage/delete-snapshot-group.html"
+  - title: FAQ
+    entries:
+    - title: Che cos'è un disco hot spare?
+      url: "/sm-storage/what-is-a-hot-spare-drive.html"
+    - title: Che cos'è un gruppo di volumi?
+      url: "/sm-storage/what-is-a-volume-group.html"
+    - title: Che cos'è un pool?
+      url: "/sm-storage/what-is-a-pool.html"
+    - title: Che cos'è la capacità riservata?
+      url: "/sm-storage/what-is-reserved-capacity.html"
+    - title: Che cos'è la sicurezza FDE/FIPS?
+      url: "/sm-storage/what-is-fde-fips-security.html"
+    - title: Che cos'è il controllo di ridondanza?
+      url: "/sm-storage/what-is-redundancy-check.html"
+    - title: Quali sono le differenze tra pool e gruppi di volumi?
+      url: "/sm-storage/what-are-the-differences-between-pools-and-volume-groups.html"
+    - title: Perché dovrei configurare manualmente un pool?
+      url: "/sm-storage/why-would-i-want-to-manually-configure-a-pool.html"
+    - title: Perché gli avvisi di capacità sono importanti?
+      url: "/sm-storage/why-are-capacity-alerts-important.html"
+    - title: Perché non posso aumentare la mia capacità di conservazione?
+      url: "/sm-storage/why-cant-i-increase-my-preservation-capacity.html"
+    - title: Esiste un limite al numero di dischi che è possibile rimuovere da un
+        pool?
+      url: "/sm-storage/is-there-a-limit-on-the-number-of-drives-i-can-remove-from-a-pool.html"
+    - title: Quali tipi di supporto sono supportati per un disco?
+      url: "/sm-storage/what-media-types-are-supported-for-a-drive.html"
+    - title: Perché alcuni dischi non vengono visualizzati?
+      url: "/sm-storage/why-are-some-drives-not-showing-up.html"
+    - title: Come posso mantenere la protezione contro le perdite di scaffali/cassetti?
+      url: "/sm-storage/how-do-i-maintain-shelf-drawer-loss-protection.html"
+    - title: Qual è il livello RAID migliore per la mia applicazione?
+      url: "/sm-storage/what-raid-level-is-best-for-my-application.html"
+    - title: Cos'è Data Assurance?
+      url: "/sm-storage/what-is-data-assurance.html"
+    - title: Che cos'è il supporto sicuro (Drive Security)?
+      url: "/sm-storage/what-is-security-capable-drive-security.html"
+    - title: Cosa devo sapere sull'aumento della capacità riservata?
+      url: "/sm-storage/what-do-i-need-to-know-about-increasing-reserved-capacity.html"
+    - title: Perché non è possibile scegliere un altro importo da diminuire di?
+      url: "/sm-storage/why-cant-i-choose-another-amount-to-decrease-by.html"
+    - title: Perché è necessaria una capacità riservata per ciascun volume membro?
+      url: "/sm-storage/why-do-i-need-reserved-capacity-for-every-member-volume.html"
+    - title: Come si visualizzano e interpretano tutte le statistiche della cache
+        SSD?
+      url: "/sm-storage/how-do-i-view-and-interpret-all-ssd-cache-statistics.html"
+    - title: Che cos'è la capacità di ottimizzazione per i pool?
+      url: "/sm-storage/what-is-optimization-capacity-pools.html"
+    - title: Qual è la capacità di ottimizzazione per i gruppi di volumi?
+      url: "/sm-storage/what-is-optimization-capacity-volume-groups.html"
+- title: Volumi
+  entries:
+  - title: Concetti
+    entries:
+    - title: Volumi nell'array di storage
+      url: "/sm-storage/volumes-in-the-storage-array.html"
+    - title: Terminologia relativa ai volumi
+      url: "/sm-storage/volume-terminology.html"
+    - title: Workflow per la creazione di volumi
+      url: "/sm-storage/workflow-for-creating-volumes.html"
+    - title: Integrità dei dati e sicurezza dei dati per i volumi
+      url: "/sm-storage/data-integrity-and-data-security-for-volumes.html"
+    - title: Cache SSD e volumi
+      url: "/sm-storage/ssd-cache-and-volumes.html"
+    - title: Carichi di lavoro specifici dell'applicazione
+      url: "/sm-storage/application-specific-workloads.html"
+    - title: Azioni che è possibile eseguire sui volumi
+      url: "/sm-storage/actions-you-can-perform-on-volumes.html"
+    - title: Capacità per i volumi
+      url: "/sm-storage/capacity-for-volumes.html"
+    - title: Monitoraggio di volumi sottili
+      url: "/sm-storage/thin-volume-monitoring.html"
+    - title: Confronto tra volumi spessi e volumi thin
+      url: "/sm-storage/comparison-between-thick-volumes-and-thin-volumes.html"
+    - title: Funzione Copy Volume (Copia volume)
+      url: "/sm-storage/copy-volume-function.html"
+    - title: Tipi di operazioni Copy Volume
+      url: "/sm-storage/types-of-copy-volume-operations.html"
+  - title: Come fare
+    entries:
+    - title: Creare storage
+      entries:
+      - title: Creare carichi di lavoro
+        url: "/sm-storage/create-workloads.html"
+      - title: Creare volumi
+        url: "/sm-storage/create-volumes-storage.html"
+    - title: Gestire i volumi
+      entries:
+      - title: Aumentare la capacità di un volume
+        url: "/sm-storage/increase-capacity-of-a-volume.html"
+      - title: Modificare le impostazioni di un volume
+        url: "/sm-storage/change-settings-for-a-volume.html"
+      - title: Inizializzare i volumi
+        url: "/sm-storage/initialize-volumes.html"
+      - title: Ridistribuire i volumi
+        url: "/sm-storage/redistribute-volumes.html"
+      - title: Modificare la proprietà del controller di un volume
+        url: "/sm-storage/change-controller-ownership-of-a-volume.html"
+      - title: Modificare le impostazioni della cache per un volume
+        url: "/sm-storage/change-cache-settings.html"
+      - title: Modificare le impostazioni di scansione dei supporti per un volume
+        url: "/sm-storage/change-media-scan-settings.html"
+      - title: Elimina volume
+        url: "/sm-storage/delete-volume.html"
+    - title: Gestire applicazioni e carichi di lavoro
+      entries:
+      - title: Aggiungere al carico di lavoro
+        url: "/sm-storage/add-to-workload.html"
+      - title: Modificare le impostazioni del carico di lavoro
+        url: "/sm-storage/change-workload-settings.html"
+    - title: Utilizzo dei servizi di copia
+      entries:
+      - title: Volume di copia
+        url: "/sm-storage/copy-volume.html"
+      - title: Eseguire un'operazione di copia del volume
+        url: "/sm-storage/take-action-on-a-copy-volume-operation.html"
+    - title: Modificare il limite di capacità allocata per un volume sottile
+      url: "/sm-storage/change-allocated-capacity-limit-for-a-thin-volume.html"
+  - title: FAQ
+    entries:
+    - title: Che cos'è un volume?
+      url: "/sm-storage/what-is-a-volume.html"
+    - title: Perché viene visualizzato un errore di overallocation della capacità
+        quando si dispone di capacità libera sufficiente in un gruppo di volumi per
+        creare volumi?
+      url: "/sm-storage/why-am-i-seeing-a-capacity-over-allocation-error-when-i-have-enough-free-capacity-in-a-volume-group-to-create-volumes.html"
+    - title: In che modo il carico di lavoro selezionato influisce sulla creazione
+        di volumi?
+      url: "/sm-storage/how-does-my-selected-workload-impact-volume-creation.html"
+    - title: Perché questi volumi non sono associati a un carico di lavoro?
+      url: "/sm-storage/why-arent-these-volumes-associated-with-a-workload.html"
+    - title: Perché non è possibile eliminare il carico di lavoro selezionato?
+      url: "/sm-storage/why-cant-i-delete-the-selected-workload.html"
+    - title: In che modo i carichi di lavoro specifici dell'applicazione mi aiutano
+        a gestire lo storage array?
+      url: "/sm-storage/how-do-application-specific-workloads-help-me-manage-my-storage-array.html"
+    - title: In che modo fornire queste informazioni aiuta a creare storage?
+      url: "/sm-storage/how-does-providing-this-information-help-create-storage.html"
+    - title: Cosa devo fare per riconoscere la capacità espansa?
+      url: "/sm-storage/what-do-i-need-to-do-to-recognize-the-expanded-capacity.html"
+    - title: Perché non vengono visualizzati tutti i pool e/o i gruppi di volumi?
+      url: "/sm-storage/why-dont-i-see-all-my-pools-and-or-volume-groups.html"
+    - title: Che cos'è la dimensione del segmento?
+      url: "/sm-storage/what-is-segment-sizing.html"
+    - title: Che cos'è la proprietà preferita del controller?
+      url: "/sm-storage/what-is-preferred-controller-ownership.html"
+    - title: Che cos'è il bilanciamento automatico del carico?
+      url: "/sm-storage/what-is-automatic-load-balancing.html"
+- title: Host
+  entries:
+  - title: Concetti
+    entries:
+    - title: Terminologia dell'host
+      url: "/sm-storage/host-terminology.html"
+    - title: Workflow per la creazione dell'host e l'assegnazione del volume
+      url: "/sm-storage/workflow-for-creating-hosts-and-assigning-volumes.html"
+    - title: Creazione automatica e manuale degli host
+      url: "/sm-storage/automatic-versus-manual-host-creation.html"
+    - title: Modalità di assegnazione dei volumi agli host e ai cluster di host
+      url: "/sm-storage/how-volumes-are-assigned-to-hosts-and-host-clusters.html"
+    - title: Volumi di accesso
+      url: "/sm-storage/access-volumes.html"
+    - title: Numero massimo di LUN
+      url: "/sm-storage/maximum-number-of-luns.html"
+  - title: Come fare
+    entries:
+    - title: Configurare l'accesso all'host
+      entries:
+      - title: Crea host automaticamente
+        url: "/sm-storage/create-host-automatically.html"
+      - title: Creare l'host manualmente
+        url: "/sm-storage/create-host-manually.html"
+      - title: Creare un cluster host
+        url: "/sm-storage/create-host-cluster.html"
+      - title: Creare volumi
+        url: "/sm-storage/create-volumes-hosts.html"
+      - title: Assegnare volumi
+        url: "/sm-storage/assign-volumes.html"
+    - title: Gestire host e cluster di host
+      entries:
+      - title: Modificare le impostazioni di un host
+        url: "/sm-storage/change-the-settings-for-a-host.html"
+      - title: Modificare le impostazioni di un cluster host
+        url: "/sm-storage/change-the-settings-for-a-host-cluster.html"
+      - title: Annullare l'assegnazione dei volumi
+        url: "/sm-storage/unassign-volumes.html"
+      - title: Modificare gli identificatori delle porte host per un host
+        url: "/sm-storage/change-host-port-identifiers-for-a-host.html"
+      - title: Eliminare l'host o il cluster host
+        url: "/sm-storage/delete-host-or-host-cluster.html"
+  - title: FAQ
+    entries:
+    - title: Cosa sono gli host e i cluster di host?
+      url: "/sm-storage/what-are-hosts-and-host-clusters.html"
+    - title: Perché dovrei creare un cluster host?
+      url: "/sm-storage/why-would-i-need-to-create-a-host-cluster.html"
+    - title: Come si fa a sapere quale tipo di sistema operativo host è corretto?
+      url: "/sm-storage/how-do-i-know-which-host-operating-system-type-is-correct.html"
+    - title: Cosa sono gli HBA e le porte dell'adattatore?
+      url: "/sm-storage/what-are-hbas-and-adapter-ports.html"
+    - title: Come faccio ad associare le porte host a un host?
+      url: "/sm-storage/how-do-i-match-the-host-ports-to-a-host.html"
+    - title: Come si creano i segreti CHAP?
+      url: "/sm-storage/how-do-i-create-chap-secrets.html"
+    - title: Qual è il cluster predefinito?
+      url: "/sm-storage/what-is-the-default-cluster.html"
+- title: Performance
+  entries:
+  - title: Concetti
+    entries:
+    - title: Panoramica delle performance
+      url: "/sm-storage/performance-overview.html"
+    - title: Terminologia relativa alle performance
+      url: "/sm-storage/performance-terminology.html"
+  - title: Come fare
+    entries:
+    - title: Visualizzare i dati delle performance grafiche
+      url: "/sm-storage/view-performance-data-graphical.html"
+    - title: Visualizzare e salvare i dati delle performance in formato tabulare
+      url: "/sm-storage/view-and-save-performance-data-tabular.html"
+    - title: Interpretare i dati delle performance
+      url: "/sm-storage/interpret-performance-data.html"
+  - title: FAQ
+    entries:
+    - title: In che modo le statistiche delle performance per i singoli volumi si
+        riferiscono al totale?
+      url: "/sm-storage/how-do-performance-statistics-for-individual-volumes-relate-to-the-total.html"
+    - title: Perché i dati vengono visualizzati come zero nei grafici e nella tabella?
+      url: "/sm-storage/why-does-the-data-display-as-zero-in-the-graphs-and-table.html"
+    - title: Cosa mostra il grafico della latenza?
+      url: "/sm-storage/what-does-the-latency-graph-show.html"
+    - title: Cosa mostra il grafico IOPS?
+      url: "/sm-storage/what-does-the-iops-graph-show.html"
+    - title: Cosa mostra il grafico MiB/s?
+      url: "/sm-storage/what-does-the-mibs-graph-show.html"
+    - title: Cosa mostra il grafico della CPU?
+      url: "/sm-storage/what-does-the-cpu-graph-show.html"
+    - title: Cosa mostra il grafico headroom?
+      url: "/sm-storage/what-does-the-headroom-graph-show.html"
+- title: Snapshot
+  entries:
+  - title: Concetti
+    entries:
+    - title: Panoramica dello storage snapshot
+      url: "/sm-storage/overview-of-snapshot-storage.html"
+    - title: Requisiti e linee guida per le snapshot
+      url: "/sm-storage/requirements-and-guidelines-for-snapshots.html"
+    - title: Volumi di base, capacità riservata e gruppi di snapshot
+      url: "/sm-storage/base-volumes-reserved-capacity-and-snapshot-groups.html"
+    - title: Pianificazioni di Snapshot e gruppi di coerenza di Snapshot
+      url: "/sm-storage/snapshot-schedules-and-snapshot-consistency-groups.html"
+    - title: Volumi Snapshot
+      url: "/sm-storage/snapshot-volumes.html"
+    - title: Rollback di Snapshot
+      url: "/sm-storage/snapshot-rollback.html"
+    - title: Terminologia Snapshot
+      url: "/sm-storage/snapshot-terminology.html"
+    - title: Workflow per la creazione di immagini snapshot e volumi di snapshot
+      url: "/sm-storage/workflow-for-creating-snapshot-images-and-snapshot-volumes.html"
+  - title: Come fare
+    entries:
+    - title: Creare snapshot e oggetti snapshot
+      entries:
+      - title: Creare un'immagine snapshot
+        url: "/sm-storage/create-snapshot-image.html"
+      - title: Programmare le immagini snapshot
+        url: "/sm-storage/schedule-snapshot-images.html"
+      - title: Creare un gruppo di coerenza snapshot
+        url: "/sm-storage/create-snapshot-consistency-group.html"
+      - title: Creare un volume di snapshot
+        url: "/sm-storage/create-snapshot-volume.html"
+    - title: Gestire le pianificazioni di snapshot
+      entries:
+      - title: Modificare le impostazioni per una pianificazione snapshot
+        url: "/sm-storage/change-the-settings-for-a-snapshot-schedule.html"
+      - title: Attivare e sospendere la pianificazione delle snapshot
+        url: "/sm-storage/activate-or-suspend-snapshot-schedule.html"
+      - title: Elimina pianificazione snapshot
+        url: "/sm-storage/delete-snapshot-schedule.html"
+    - title: Gestire le immagini Snapshot
+      entries:
+      - title: Consente di visualizzare le impostazioni dell'immagine snapshot
+        url: "/sm-storage/view-snapshot-image-settings.html"
+      - title: Avviare il rollback dell'immagine snapshot per un volume di base
+        url: "/sm-storage/start-snapshot-image-rollback-for-base-volume.html"
+      - title: Avviare il rollback dell'immagine snapshot per i volumi membri del
+          gruppo di coerenza snapshot
+        url: "/sm-storage/start-snapshot-image-rollback-for-consistency-group-member-volumes.html"
+      - title: Riprendere il rollback dell'immagine snapshot
+        url: "/sm-storage/resume-snapshot-image-rollback.html"
+      - title: Annulla il rollback dell'immagine snapshot
+        url: "/sm-storage/cancel-snapshot-image-rollback.html"
+      - title: Eliminare l'immagine istantanea
+        url: "/sm-storage/delete-snapshot-image.html"
+    - title: Gestire i gruppi di coerenza di Snapshot
+      entries:
+      - title: Aggiungere un volume membro a un gruppo di coerenza snapshot
+        url: "/sm-storage/add-member-volumes-to-a-snapshot-consistency-group.html"
+      - title: Rimuovere un volume membro da un gruppo di coerenza snapshot
+        url: "/sm-storage/remove-member-volumes-from-a-consistency-group.html"
+      - title: Modificare le impostazioni di un gruppo di coerenza snapshot
+        url: "/sm-storage/change-the-settings-for-a-snapshot-consistency-group.html"
+      - title: Elimina gruppo di coerenza snapshot
+        url: "/sm-storage/delete-snapshot-consistency-group.html"
+    - title: Gestire i volumi di snapshot
+      entries:
+      - title: Convertire il volume Snapshot in modalità lettura/scrittura
+        url: "/sm-storage/convert-a-snapshot-volume-to-read-write-mode.html"
+      - title: Modificare le impostazioni del volume per un volume di snapshot
+        url: "/sm-storage/change-the-settings-for-a-snapshot-volume.html"
+      - title: Copia del volume Snapshot
+        url: "/sm-storage/copy-snapshot-volume.html"
+      - title: Ricreare il volume di snapshot
+        url: "/sm-storage/re-create-snapshot-volume.html"
+      - title: Disattiva il volume Snapshot
+        url: "/sm-storage/disable-snapshot-volume.html"
+      - title: Elimina volume snapshot
+        url: "/sm-storage/delete-snapshot-volume.html"
+  - title: FAQ
+    entries:
+    - title: Perché non vengono visualizzati tutti i volumi, gli host o i cluster
+        di host?
+      url: "/sm-storage/why-dont-i-see-all-my-volumes-hosts-or-host-clusters.html"
+    - title: Che cos'è un'immagine snapshot?
+      url: "/sm-storage/what-is-a-snapshot-image.html"
+    - title: Perché utilizzare le immagini Snapshot?
+      url: "/sm-storage/why-use-snapshot-images.html"
+    - title: Quali tipi di volumi possono essere utilizzati per le snapshot?
+      url: "/sm-storage/what-kind-of-volumes-can-be-used-for-snapshots.html"
+    - title: Perché dovrei creare un gruppo di coerenza delle snapshot?
+      url: "/sm-storage/why-would-i-create-a-snapshot-consistency-group.html"
+    - title: Che cos'è un volume snapshot e quando ha bisogno di capacità riservata?
+      url: "/sm-storage/what-is-a-snapshot-volume-and-when-does-it-need-reserved-capacity.html"
+    - title: Che cos'è un gruppo di snapshot?
+      url: "/sm-storage/what-is-a-snapshot-group.html"
+    - title: Perché è necessario disattivare un volume di snapshot?
+      url: "/sm-storage/why-would-i-disable-a-snapshot-volume.html"
+    - title: Che cos'è lo stato Disabled?
+      url: "/sm-storage/what-is-the-disabled-state.html"
+    - title: Perché dovrei sospendere un programma di snapshot?
+      url: "/sm-storage/why-would-i-suspend-a-snapshot-schedule.html"

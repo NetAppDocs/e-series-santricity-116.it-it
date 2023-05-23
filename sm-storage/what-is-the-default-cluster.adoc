@@ -1,0 +1,23 @@
+---
+permalink: sm-storage/what-is-the-default-cluster.html 
+sidebar: sidebar 
+keywords: default, cluster, system, defined, entity, allow, unassociated, host, bus, adapter, port, identifier, logged, storage, array, gain, access, volumes, assign, physically, installed, particular 
+summary: 'Il cluster predefinito è un"entità definita dal sistema che consente a qualsiasi identificatore di porta host HBA (host bus adapter) non associato che abbia effettuato l"accesso all"array di storage di accedere a qualsiasi volume assegnato al cluster predefinito. Un identificatore di porta host non associato è una porta host che, se fisicamente installata in un host e collegata all"array di storage, non è logicamente associata a un host specifico.' 
+---
+= Qual è il cluster predefinito?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il cluster predefinito è un'entità definita dal sistema che consente a qualsiasi identificatore di porta host HBA (host bus adapter) non associato che abbia effettuato l'accesso all'array di storage di accedere a qualsiasi volume assegnato al cluster predefinito. Un identificatore di porta host non associato è una porta host che, se fisicamente installata in un host e collegata all'array di storage, non è logicamente associata a un host specifico.
+
+[NOTE]
+====
+Se si desidera che gli host dispongano di un accesso specifico a determinati volumi nell'array di storage, è necessario _non_ utilizzare il cluster predefinito. È invece necessario associare gli identificatori delle porte host ai rispettivi host. Questa operazione può essere eseguita manualmente utilizzando System Manager durante l'operazione Create host (Crea host) o automaticamente utilizzando l'HCA (host Context Agent) installato su ciascun host. Quindi, assegnare i volumi a un singolo host o a un cluster host.
+
+====
+È necessario _solo_ utilizzare il cluster predefinito in situazioni speciali in cui l'ambiente di storage esterno favorisce l'accesso a tutti gli host e a tutti gli identificatori di porta host connessi allo storage array a tutti i volumi (modalità all-access) Senza rendere specifici gli host noti allo storage array o a System Manager.
+
+Inizialmente, è possibile assegnare i volumi solo al cluster predefinito tramite l'interfaccia della riga di comando (CLI). Tuttavia, dopo aver assegnato almeno un volume al cluster predefinito, questa entità (chiamata cluster predefinito) viene visualizzata in System Manager ed è possibile utilizzare System Manager per gestire questa entità.

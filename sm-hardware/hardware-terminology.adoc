@@ -1,0 +1,104 @@
+---
+permalink: sm-hardware/hardware-terminology.html 
+sidebar: sidebar 
+keywords: hardware, terms, apply, storage 
+summary: Scopri come si applicano i termini hardware al tuo storage array. 
+---
+= Terminologia hardware
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Scopri come si applicano i termini hardware al tuo storage array.
+
+[cols="1a,3a"]
+|===
+| Componente | Descrizione 
+
+
+ a| 
+Array di storage
+ a| 
+Uno storage array include shelf, controller, dischi, software e firmware.
+
+
+
+ a| 
+Shelf
+ a| 
+Uno shelf è un enclosure installato in un cabinet o in un rack. Contiene i componenti hardware per lo storage array. Esistono due tipi di shelf: Uno shelf di controller e uno shelf di dischi. Uno shelf di controller include controller e dischi. Uno shelf di dischi include i moduli di input/output (IOM) e i dischi.
+
+
+
+ a| 
+Controller
+ a| 
+Un controller è costituito da una scheda, firmware e software. Controlla i dischi e implementa le funzioni di System Manager.
+
+
+
+ a| 
+Disco
+ a| 
+Un disco è un dispositivo elettromeccanico o un dispositivo di memoria a stato solido che fornisce il supporto di storage fisico per i dati.
+
+
+
+ a| 
+Baia
+ a| 
+Un alloggiamento è uno slot nello shelf in cui è installato un disco o un altro componente.
+
+
+
+ a| 
+Shelf di dischi
+ a| 
+Uno shelf di dischi, chiamato anche shelf di espansione, contiene un set di dischi e due moduli di input/output (IOM). Gli IOM contengono porte SAS che collegano uno shelf di dischi a uno shelf di controller o ad altri shelf di dischi.
+
+[NOTE]
+====
+Gli shelf di dischi non sono disponibili per i sistemi storage EF600.
+
+====
+
+
+ a| 
+Shelf di controller
+ a| 
+Uno shelf di controller contiene un set di dischi e uno o più contenitori di controller. Un contenitore di controller contiene i controller, le schede di interfaccia host (HICS) e le batterie.
+
+
+
+ a| 
+Alimentazione/filtro a carboni attivi della ventola
+ a| 
+Un contenitore di alimentazione/ventola è un gruppo che scorre in un ripiano. Include un alimentatore e una ventola integrata.
+
+
+
+ a| 
+IOM (ESM)
+ a| 
+IOM è un modulo di input/output che include porte SAS per il collegamento dello shelf di dischi allo shelf di controller.
+
+[NOTE]
+====
+Gli shelf di dischi non sono disponibili per i sistemi storage EF600.
+
+====
+[NOTE]
+====
+Nei precedenti modelli di controller, l'IOM era definito come ESM (Environmental Service Module).
+
+====
+
+
+ a| 
+SFP
+ a| 
+Un SFP è un ricetrasmettitore SFP (Small Form-Factor Pluggable).
+
+|===

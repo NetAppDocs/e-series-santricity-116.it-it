@@ -1,0 +1,110 @@
+---
+permalink: sm-settings/iscsi-terminology.html 
+sidebar: sidebar 
+keywords: iscsi, storage array, terms apply 
+summary: Scopri in che modo i termini iSCSI si applicano al tuo storage array. 
+---
+= Terminologia iSCSI
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Scopri in che modo i termini iSCSI si applicano al tuo storage array.
+
+[cols="1a,3a"]
+|===
+| Termine | Descrizione 
+
+
+ a| 
+CAP
+ a| 
+Il metodo CHAP (Challenge Handshake Authentication Protocol) convalida l'identità di destinazioni e iniziatori durante il collegamento iniziale. L'autenticazione si basa su una chiave di sicurezza condivisa denominata CHAP__secret__.
+
+
+
+ a| 
+Controller
+ a| 
+Un controller è costituito da una scheda, firmware e software. Controlla i dischi e implementa le funzioni di System Manager.
+
+
+
+ a| 
+DHCP
+ a| 
+Il protocollo DHCP (Dynamic host Configuration Protocol) è un protocollo utilizzato sulle reti IP (Internet Protocol) per la distribuzione dinamica dei parametri di configurazione della rete, ad esempio gli indirizzi IP.
+
+
+
+ a| 
+IB
+ a| 
+InfiniBand (IB) è uno standard di comunicazione per la trasmissione dei dati tra server e sistemi storage dalle performance elevate.
+
+
+
+ a| 
+Risposta PING ICMP
+ a| 
+ICMP (Internet Control message Protocol) è un protocollo utilizzato dai sistemi operativi dei computer collegati in rete per inviare messaggi. I messaggi ICMP determinano se un host è raggiungibile e quanto tempo occorre per ottenere i pacchetti da e verso tale host.
+
+
+
+ a| 
+IQN
+ a| 
+Un identificatore IQN (iSCSI Qualified Name) è un nome univoco per un iSCSI Initiator o una destinazione iSCSI.
+
+
+
+ a| 
+Er
+ a| 
+ISER (iSCSI Extensions for RDMA) è un protocollo che estende il protocollo iSCSI per il funzionamento sui trasporti RDMA, come InfiniBand o Ethernet.
+
+
+
+ a| 
+ISNS
+ a| 
+Internet Storage Name Service (iSNS) è un protocollo che consente il rilevamento, la gestione e la configurazione automatici dei dispositivi iSCSI e Fibre Channel sulle reti TCP/IP.
+
+
+
+ a| 
+Indirizzo MAC
+ a| 
+Gli identificatori di controllo dell'accesso ai supporti (indirizzi MAC) vengono utilizzati da Ethernet per distinguere tra canali logici separati che collegano due porte sulla stessa interfaccia di rete di trasporto fisica.
+
+
+
+ a| 
+Client di gestione
+ a| 
+Un client di gestione è il computer in cui è installato un browser per accedere a System Manager.
+
+
+
+ a| 
+MTU
+ a| 
+Una MTU (Maximum Transmission Unit) è il pacchetto o frame di dimensioni maggiori che può essere inviato in una rete.
+
+
+
+ a| 
+RDMA
+ a| 
+RDMA (Remote Direct Memory Access) è una tecnologia che consente ai computer di rete di scambiare dati nella memoria principale senza coinvolgere il sistema operativo di entrambi i computer.
+
+
+
+ a| 
+Sessione di rilevamento senza nome
+ a| 
+Quando l'opzione per le sessioni di rilevamento senza nome è attivata, gli iniziatori iSCSI non devono specificare l'IQN di destinazione per recuperare le informazioni del controller.
+
+|===

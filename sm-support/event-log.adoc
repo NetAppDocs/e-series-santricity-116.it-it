@@ -1,0 +1,27 @@
+---
+permalink: sm-support/event-log.html 
+sidebar: sidebar 
+keywords: event, log, provide, historical, record, occur, storage, array, aid, technical, support, troubleshooting, leading, failures 
+summary: 'Il registro eventi fornisce una cronologia degli eventi che si sono verificati sull"array di storage e aiuta il supporto tecnico nella risoluzione dei problemi relativi agli eventi che hanno causato guasti.' 
+---
+= Registro eventi
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Il registro eventi fornisce una cronologia degli eventi che si sono verificati sull'array di storage e aiuta il supporto tecnico nella risoluzione dei problemi relativi agli eventi che hanno causato guasti.
+
+Il registro eventi è un record dettagliato degli eventi che si verificano nell'array di storage. Registra gli eventi di configurazione e gli errori dei componenti dello storage array. È possibile utilizzare il registro eventi come strumento diagnostico supplementare per il Recovery Guru per il tracciamento degli eventi degli array di storage. Fare sempre riferimento al Recovery Guru prima di tutto quando si tenta di eseguire il ripristino a seguito di guasti dei componenti nell'array di storage.
+
+Gli eventi nel registro eventi sono classificati con stati diversi. Gli eventi sui quali è necessario intervenire hanno i seguenti stati:
+
+* Critico
+* Attenzione
+
+
+Gli eventi che sono informativi e non richiedono alcuna azione immediata sono i seguenti:
+
+* Informativo
+

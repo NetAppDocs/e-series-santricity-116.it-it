@@ -1,0 +1,14 @@
+---
+permalink: sm-storage/why-would-i-need-to-create-a-host-cluster.html 
+sidebar: sidebar 
+keywords: need, create, host, cluster, want, have, two, more, share, access, same, set, volumes, normally, individual, clustering, software, install, coordinate 
+summary: 'È necessario creare un cluster host se si desidera che due o più host condividano l"accesso allo stesso set di volumi. In genere, i singoli host dispongono di un software di clustering installato su di essi per coordinare l"accesso ai volumi.' 
+---
+= Perché dovrei creare un cluster host?
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È necessario creare un cluster host se si desidera che due o più host condividano l'accesso allo stesso set di volumi. In genere, i singoli host dispongono di un software di clustering installato su di essi per coordinare l'accesso ai volumi.

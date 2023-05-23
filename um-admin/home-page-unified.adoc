@@ -1,0 +1,45 @@
+---
+permalink: um-admin/home-page-unified.html 
+sidebar: sidebar 
+keywords: unified, manager, web, interface, allow, manage, multiple, storage, arrays, single, view 
+summary: 'Unified Manager è un"interfaccia basata su web che consente di gestire più array di storage in una singola vista.' 
+---
+= Panoramica dell'interfaccia
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Unified Manager è un'interfaccia basata su web che consente di gestire più array di storage in una singola vista.
+
+
+
+== Pagina principale
+
+Quando si accede a Unified Manager, la pagina principale si apre su *Gestisci - tutto*. Da questa pagina è possibile scorrere un elenco degli array di storage rilevati nella rete, visualizzarne lo stato ed eseguire operazioni su un singolo array o su un gruppo di array.
+
+
+
+== Barra laterale di navigazione
+
+La barra laterale di navigazione fornisce quanto segue:
+
+* *Gestisci* -- rileva gli array di storage nella tua rete, avvia Gestore di sistema di SANtricity per un array, importa le impostazioni da un array a più array e gestisci i gruppi di array. Selezionare le caselle di controllo accanto ai nomi degli array per eseguire operazioni su di essi, ad esempio l'importazione delle impostazioni e la creazione di gruppi di array. I puntini di sospensione alla fine di ogni riga forniscono un menu in linea per le operazioni su un singolo array, ad esempio la ridenominazione.
+* *Operations* -- consente di visualizzare l'avanzamento delle operazioni batch, ad esempio l'importazione di impostazioni da un array a un altro.
++
+[NOTE]
+====
+Alcune operazioni non sono disponibili quando uno storage array ha uno stato non ottimale.
+
+====
+* *Certificate Management* -- Gestione dei certificati per l'autenticazione tra browser e client.
+* *Access Management* -- consente di stabilire l'autenticazione dell'utente per l'interfaccia di Unified Manager.
+* *Supporto* -- Visualizza le opzioni di supporto tecnico, le risorse e i contatti.
+
+
+
+
+== Funzioni banner
+
+Dal banner superiore, è possibile accedere alla Guida e ad altra documentazione per l'interfaccia di Unified Manager. È inoltre possibile accedere alle opzioni di amministrazione, disponibili dal menu a discesa accanto al proprio nome di accesso.

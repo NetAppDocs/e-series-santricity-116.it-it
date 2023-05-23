@@ -1,0 +1,55 @@
+---
+permalink: sm-settings/unlock-drives-using-an-internal-security-key.html 
+sidebar: sidebar 
+keywords: secure, enable, storage array, appropriate, importing, new storage, drive 
+summary: 'Se si spostano dischi abilitati alla protezione da un array di storage a un altro, è necessario importare la chiave di sicurezza appropriata nel nuovo array di storage. L"importazione della chiave consente di sbloccare i dati presenti sui dischi.' 
+---
+= Sbloccare i dischi utilizzando una chiave di sicurezza
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Se si spostano dischi abilitati alla protezione da un array di storage a un altro, è necessario importare la chiave di sicurezza appropriata nel nuovo array di storage. L'importazione della chiave consente di sbloccare i dati presenti sui dischi.
+
+.Prima di iniziare
+* L'array di storage di destinazione (in cui si spostano i dischi) deve già disporre di una chiave di sicurezza configurata. I dischi migrati verranno ridimitati nell'array di storage di destinazione.
+* È necessario conoscere la chiave di sicurezza associata ai dischi che si desidera sbloccare.
+* Il file della chiave di sicurezza è disponibile sul client di gestione (il sistema con un browser utilizzato per accedere a System Manager). Se si spostano i dischi in un array di storage gestito da un sistema diverso, è necessario spostare il file della chiave di sicurezza in quel client di gestione.
+
+
+.A proposito di questa attività
+Questa attività descrive come sbloccare i dati in dischi abilitati alla sicurezza che sono stati rimossi da un array di storage e reinstallati in un altro. Una volta che l'array rileva i dischi, viene visualizzata una condizione di "attenzione necessaria" insieme allo stato "chiave di sicurezza necessaria" per questi dischi riposizionati. È possibile sbloccare i dati delle unità importando la chiave di sicurezza nell'array di storage. Durante questo processo, selezionare il file della chiave di sicurezza e immettere la password per la chiave.
+
+[NOTE]
+====
+La password non corrisponde alla password Administrator dell'array di storage.
+
+====
+Se nel nuovo array di storage sono installate altre unità abilitate alla protezione, potrebbero utilizzare una chiave di sicurezza diversa da quella che si sta importando. Durante il processo di importazione, la vecchia chiave di sicurezza viene utilizzata solo per sbloccare i dati dei dischi che si stanno installando. Quando il processo di sblocco ha esito positivo, i dischi appena installati vengono reinseriti nella chiave di sicurezza dell'array di storage di destinazione.
+
+.Fasi
+. Selezionare menu:Impostazioni[sistema].
+. In *Security key management*, selezionare *Unlock Secure Drives*.
++
+Viene visualizzata la finestra di dialogo Unlock Secure Drives. Tutti i dischi che richiedono una chiave di sicurezza sono mostrati nella tabella.
+
+. *Opzionale:* posizionare il mouse su un numero di disco per visualizzare la posizione dell'unità (numero di shelf e numero di alloggiamento).
+. Fare clic su *Browse*, quindi selezionare il file della chiave di sicurezza corrispondente al disco che si desidera sbloccare.
++
+Il file delle chiavi selezionato viene visualizzato nella finestra di dialogo.
+
+. Inserire la password associata al file delle chiavi.
++
+I caratteri immessi vengono mascherati.
+
+. Fare clic su *Sblocca*.
++
+Se l'operazione di sblocco ha esito positivo, viene visualizzata la finestra di dialogo "i dischi protetti associati sono stati sbloccati".
+
+
+
+.Risultati
+Quando tutti i dischi sono bloccati e quindi sbloccati, ogni controller nell'array di storage viene riavviato. Tuttavia, se nell'array di storage di destinazione sono già presenti alcuni dischi sbloccati, i controller non verranno riavviati.

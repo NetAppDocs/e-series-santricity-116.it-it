@@ -1,0 +1,110 @@
+---
+permalink: sm-hardware/drive-terminology.html 
+sidebar: sidebar 
+keywords: drive, apply, storage array 
+summary: Scopri in che modo i termini relativi al disco si applicano al tuo storage array. 
+---
+= Gestione della terminologia
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Scopri in che modo i termini relativi al disco si applicano al tuo storage array.
+
+[cols="1a,3a"]
+|===
+| Componente | Descrizione 
+
+
+ a| 
+DA
+ a| 
+Data Assurance (da) è una funzione che controlla e corregge gli errori che potrebbero verificarsi quando i dati vengono trasferiti attraverso i controller fino ai dischi. Data Assurance può essere abilitato a livello di pool o gruppo di volumi, con host che utilizzano un'interfaccia i/o compatibile con da, ad esempio Fibre Channel.
+
+
+
+ a| 
+Funzione di protezione del disco
+ a| 
+Drive Security è una funzionalità di storage array che offre un ulteriore livello di sicurezza con dischi FDE (Full Disk Encryption) o FIPS (Federal Information Processing Standard). Quando questi dischi vengono utilizzati con la funzione Drive Security, richiedono una chiave di sicurezza per l'accesso ai dati. Quando i dischi vengono fisicamente rimossi dall'array, non possono funzionare fino a quando non vengono installati in un altro array, a questo punto, saranno in uno stato di sicurezza bloccato fino a quando non viene fornita la chiave di sicurezza corretta.
+
+
+
+ a| 
+Shelf di dischi
+ a| 
+Uno shelf di dischi, chiamato anche shelf di espansione, contiene un set di dischi e due moduli di input/output (IOM). Gli IOM contengono porte SAS che collegano uno shelf di dischi a uno shelf di controller o ad altri shelf di dischi.
+
+
+
+ a| 
+DULBE
+ a| 
+Deallocated or Unwritten Logical Block Error (DULBE) è un'opzione sui dischi NVMe che consente a un array di storage di deallocare i blocchi che fanno parte di un volume. La deallocazione dei blocchi su un disco può ridurre notevolmente il tempo necessario per inizializzare i volumi. Inoltre, gli host possono deallocare i blocchi logici nel volume utilizzando il comando NVMe Dataset Management.
+
+
+
+ a| 
+Dischi FDE
+ a| 
+I dischi con crittografia completa del disco (FDE) eseguono la crittografia sul disco a livello hardware. Il disco rigido contiene un chip ASIC che crittografa i dati durante le operazioni di scrittura, quindi decrta i dati durante le operazioni di lettura.
+
+
+
+ a| 
+Dischi FIPS
+ a| 
+I dischi FIPS utilizzano gli standard FIPS (Federal Information Processing Standards) 140-2 livello 2. Si tratta essenzialmente di dischi FDE conformi agli standard governativi degli Stati Uniti per garantire metodi e algoritmi di crittografia efficaci. I dischi FIPS hanno standard di sicurezza più elevati rispetto ai dischi FDE.
+
+
+
+ a| 
+DISCO RIGIDO
+ a| 
+I dischi rigidi (HDD) sono dispositivi di storage dei dati che utilizzano dischi metallici rotanti con rivestimento magnetico.
+
+
+
+ a| 
+Dischi hot spare
+ a| 
+Le hot spare fungono da unità di standby nei gruppi di volumi RAID 1, RAID 5 o RAID 6. Si tratta di dischi completamente funzionanti che non contengono dati. Se un disco si guasta nel gruppo di volumi, il controller ricostruisce automaticamente i dati dal disco guasto a un hot spare.
+
+
+
+ a| 
+NVMe
+ a| 
+NVMe (non-volatile Memory Express) è un'interfaccia progettata per i dispositivi di storage basati su flash, come ad esempio i dischi SSD. NVMe riduce l'overhead di i/o e include miglioramenti delle performance rispetto alle interfacce dei dispositivi logici precedenti.
+
+
+
+ a| 
+SAS
+ a| 
+Serial Attached SCSI (SAS) è un protocollo seriale point-to-point che collega i controller direttamente ai dischi.
+
+
+
+ a| 
+Dischi sicuri
+ a| 
+I dischi che supportano la protezione possono essere dischi con crittografia completa del disco (FDE) o dischi FIPS (Federal Information Processing Standard), che crittografano i dati durante la scrittura e decrittare i dati durante la lettura. Questi dischi sono considerati sicuri-_capaci_ perché possono essere utilizzati per una maggiore sicurezza utilizzando la funzione Drive Security. Se la funzione Drive Security è attivata per i gruppi di volumi e i pool utilizzati con questi dischi, i dischi diventano sicuri-_abilitati_.
+
+
+
+ a| 
+Dischi sicuri
+ a| 
+Le unità abilitate alla protezione vengono utilizzate con la funzione Drive Security. Quando si attiva la funzione Drive Security e si applica Drive Security a un pool o a un gruppo di volumi su dischi sicuri-_capaci_, i dischi diventano sicuri__-abilitati__. L'accesso in lettura e scrittura è disponibile solo attraverso un controller configurato con la chiave di sicurezza corretta. Questa sicurezza aggiuntiva impedisce l'accesso non autorizzato ai dati su un disco che viene fisicamente rimosso dallo storage array.
+
+
+
+ a| 
+SSD
+ a| 
+I dischi a stato solido (SSD) sono dispositivi di storage che utilizzano la memoria a stato solido (flash) per memorizzare i dati in modo persistente. Gli SSD emulano i dischi rigidi convenzionali e sono disponibili con le stesse interfacce utilizzate dai dischi rigidi.
+
+|===

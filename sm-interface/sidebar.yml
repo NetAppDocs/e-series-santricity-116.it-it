@@ -1,0 +1,63 @@
+---
+section: sm-interface
+title: Interfaccia principale
+entries:
+- title: Pagina iniziale
+  url: "/sm-interface/home-page.html"
+- title: Novità
+  url: "/whats-new.html"
+- title: Installazione guidata
+  entries:
+  - title: Concetti
+    entries:
+    - title: Panoramica dell'installazione guidata
+      url: "/sm-interface/setup-wizard-overview.html"
+    - title: Terminologia dell'installazione guidata
+      url: "/sm-interface/setup-wizard-terminology.html"
+  - title: FAQ
+    entries:
+    - title: Cosa succede se non vengono visualizzati tutti i componenti hardware?
+      url: "/sm-interface/what-if-i-dont-see-all-of-my-hardware-components.html"
+    - title: Cosa succede se non vengono visualizzati tutti gli host?
+      url: "/sm-interface/what-if-i-dont-see-all-of-my-hosts.html"
+    - title: In che modo l'identificazione delle applicazioni mi aiuta a gestire lo
+        storage array?
+      url: "/sm-interface/how-does-identifying-applications-help-me-manage-my-storage-array.html"
+    - title: Che cos'è un carico di lavoro?
+      url: "/sm-interface/what-is-a-workload.html"
+    - title: Come si configura il metodo di consegna per AutoSupport?
+      url: "/sm-interface/how-do-i-configure-the-delivery-method-for-autosupport-new.html"
+    - title: Come posso sapere se devo accettare la configurazione del pool consigliata?
+      url: "/sm-interface/how-do-i-know-if-i-should-accept-the-recommended-pool-configuration.html"
+    - title: System Manager non ha rilevato alcun host. Cosa devo fare?
+      url: "/sm-interface/system-manager-has-not-detected-any-hosts-what-do-i-do.html"
+- title: Amministrazione degli array di storage
+  entries:
+  - title: Concetti
+    entries:
+    - title: Panoramica dello storage array
+      url: "/sm-interface/storage-array-overview.html"
+    - title: Protezione con password di amministratore
+      url: "/sm-interface/administrator-password-protection.html"
+    - title: Notifica dei problemi
+      url: "/sm-interface/problem-notification.html"
+    - title: Operazioni in corso
+      url: "/sm-interface/operations-in-progress.html"
+  - title: Come fare
+    entries:
+    - title: Impostare le unità predefinite per i valori di capacità
+      url: "/sm-interface/set-default-units-for-capacity-values.html"
+    - title: Impostare l'intervallo di tempo predefinito per i grafici delle prestazioni
+      url: "/sm-interface/set-default-time-frame-for-performance-graphs.html"
+    - title: Risolvere i problemi utilizzando Recovery Guru
+      url: "/sm-interface/recover-from-problems-using-recovery-guru.html"
+    - title: Visualizzare e agire sulle operazioni in corso
+      url: "/sm-interface/view-and-act-on-operations-in-progress.html"
+  - title: FAQ
+    entries:
+    - title: Dove si possono trovare ulteriori informazioni sulle preferenze di visualizzazione?
+      url: "/sm-interface/where-can-i-find-more-information-about-display-preferences.html"
+    - title: Quali sono i browser supportati?
+      url: "/sm-interface/what-are-the-supported-browsers.html"
+    - title: Quali sono i tasti di scelta rapida?
+      url: "/sm-interface/what-are-the-keyboard-shortcuts.html"

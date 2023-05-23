@@ -1,0 +1,67 @@
+---
+permalink: sm-hardware/erase-drive.html 
+sidebar: sidebar 
+keywords: erase, secure, enabled, drive, reuse, volume, group, pool, ssd cache, storage array 
+summary: È possibile cancellare un disco abilitato alla sicurezza in modo che possa essere riutilizzato in un altro gruppo di volumi, pool, cache SSD o in un altro array di storage. Questa procedura ripristina gli attributi di sicurezza del disco e garantisce che i dati non possano essere letti di nuovo. 
+---
+= Cancellare l'unità abilitata per la protezione
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile cancellare un disco abilitato alla sicurezza in modo che possa essere riutilizzato in un altro gruppo di volumi, pool, cache SSD o in un altro array di storage. Questa procedura ripristina gli attributi di sicurezza del disco e garantisce che i dati non possano essere letti di nuovo.
+
+.Prima di iniziare
+L'unità protetta deve essere in uno stato non assegnato.
+
+.A proposito di questa attività
+Utilizzare l'opzione di cancellazione sicura solo se si desidera rimuovere tutti i dati su un disco abilitato alla protezione e reimpostare gli attributi di sicurezza del disco.
+
+[CAUTION]
+====
+*Possibile perdita di dati* -- l'operazione di cancellazione sicura non può essere annullata. Assicurarsi di selezionare il disco corretto durante la procedura.
+
+====
+.Fasi
+. Selezionare *hardware*.
+. Se la figura mostra i controller, fare clic su *Mostra parte anteriore dello shelf*.
++
+Il grafico cambia per mostrare i dischi al posto dei controller.
+
+. Utilizzare i campi dei filtri per visualizzare tutti i dischi non assegnati e protetti nello shelf. Dall'elenco a discesa *Mostra dischi che sono...*, selezionare *abilitato alla protezione* e *non assegnato*.
++
+[NOTE]
+====
+Se tutti i dischi condividono gli stessi attributi fisici, il campo di filtro *Mostra dischi che sono...* non viene visualizzato. Se tutti i dischi condividono gli stessi attributi logici, il campo *Anywhere in the storage array* filter non viene visualizzato.
+
+La vista shelf mostra solo i dischi non assegnati e protetti; tutti gli altri sono disattivati.
+
+====
+. Selezionare l'unità abilitata per la protezione che si desidera cancellare.
++
+[CAUTION]
+====
+*Possibile perdita di dati* -- assicurarsi di aver selezionato il disco corretto. Una volta completata l'operazione di cancellazione sicura, non è possibile ripristinare i dati.
+
+====
++
+Viene visualizzato il menu di scelta rapida del disco.
+
+. Selezionare *Secure Erase*.
++
+L'opzione di cancellazione sicura viene visualizzata solo se si seleziona un disco non assegnato e abilitato alla protezione.
+
++
+[NOTE]
+====
+Per i dischi NVMe SED, è necessario fornire il PSID. Il PSID è riportato sull'etichetta dell'unità. Questa operazione è necessaria se non si dispone della chiave di blocco per il backup.
+
+====
+. Nella finestra di dialogo Secure Erase Drive, leggere le informazioni importanti sulla perdita di dati.
+. Confermare l'operazione, quindi fare clic su *Erase* (Cancella).
+
+
+.Risultati
+L'unità è ora disponibile per l'utilizzo in un altro gruppo di volumi o pool di dischi o in un altro array di storage.

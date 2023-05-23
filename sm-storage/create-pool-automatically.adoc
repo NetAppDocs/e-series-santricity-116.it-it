@@ -1,0 +1,60 @@
+---
+permalink: sm-storage/create-pool-automatically.html 
+sidebar: sidebar 
+keywords: pool, creation, initiated, automatically, system, manager, detect, unassigned, drives, storage, array, configure, add, existing 
+summary: 'La creazione del pool viene avviata automaticamente quando System Manager rileva dischi non assegnati nell"array di storage. È possibile utilizzare la creazione automatica del pool per configurare facilmente tutte le unità non assegnate nell"array di storage in un unico pool e per aggiungere unità nei pool esistenti.' 
+---
+= Crea pool automaticamente
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La creazione del pool viene avviata automaticamente quando System Manager rileva dischi non assegnati nell'array di storage. È possibile utilizzare la creazione automatica del pool per configurare facilmente tutte le unità non assegnate nell'array di storage in un unico pool e per aggiungere unità nei pool esistenti.
+
+.Prima di iniziare
+È possibile avviare la finestra di dialogo *Pool Auto-Configuration* quando si verifica una delle seguenti condizioni:
+
+* È stato rilevato almeno un disco non assegnato che può essere aggiunto a un pool esistente con tipi di disco simili.
+* Sono stati rilevati undici (11) o più dischi non assegnati che possono essere utilizzati per creare un nuovo pool (se non possono essere aggiunti a un pool esistente a causa di tipi di dischi diversi).
+
+
+.A proposito di questa attività
+Tenere presente quanto segue:
+
+* Quando si aggiungono dischi a un array di storage, System Manager rileva automaticamente i dischi e richiede di creare un singolo pool o più pool in base al tipo di disco e alla configurazione corrente.
+* Se i pool sono stati precedentemente definiti, System Manager richiede automaticamente di aggiungere le unità compatibili a un pool esistente. Quando vengono aggiunte nuove unità a un pool esistente, System Manager ridistribuisce automaticamente i dati nella nuova capacità, che ora include le nuove unità aggiunte.
+* Durante la configurazione di uno storage array EF600, assicurarsi che ciascun controller abbia accesso a un numero uguale di dischi nei primi 12 slot e a un numero uguale di dischi negli ultimi 12 slot. Questa configurazione aiuta i controller a utilizzare entrambi i bus PCIe lato disco in modo più efficace. Attualmente, System Manager consente la selezione del disco nella funzione Advanced (Avanzate) quando si crea un gruppo di volumi. Per la creazione del pool, si consiglia di utilizzare tutti i dischi dell'array di storage.
+
+
+È possibile avviare la finestra di dialogo *Pool Auto-Configuration* utilizzando uno dei seguenti metodi:
+
+* Quando viene rilevata una capacità non assegnata, la raccomandazione di configurazione automatica del pool viene visualizzata nella pagina iniziale dell'area di notifica. Fare clic su *View Pool Auto-Configuration* (Visualizza configurazione automatica pool) per avviare la finestra di dialogo.
+* È inoltre possibile avviare la finestra di dialogo *Pool Auto-Configuration* dalla pagina Pools and Volume Groups come descritto nella seguente attività.
+
+
+.Fasi
+. Selezionare menu:Storage[Pools & Volume Groups] (Storage[Pools & Volume Groups])
+. Selezionare menu:More[Avvia configurazione automatica del pool].
++
+La tabella dei risultati elenca i nuovi pool, i pool esistenti con le unità aggiunte o entrambi. Per impostazione predefinita, un nuovo pool viene denominato con un numero sequenziale.
+
++
+Si noti che System Manager eseguirà le seguenti operazioni:
+
++
+** Creare un singolo pool se vi è un numero sufficiente di dischi con lo stesso tipo di disco (HDD o SSD) e hanno capacità simile.
+** Creare più pool se la capacità non assegnata è costituita da diversi tipi di dischi.
+** Aggiungere le unità a un pool esistente se un pool è già definito nell'array di storage e aggiungere nuove unità dello stesso tipo di disco al pool.
+** Aggiungere i dischi dello stesso tipo al pool esistente e utilizzare gli altri tipi di dischi per creare pool diversi se i nuovi dischi sono di tipi diversi.
+
+
+. Per modificare il nome di un nuovo pool, fare clic sull'icona *Modifica* (la matita).
+. Per visualizzare ulteriori caratteristiche del pool, posizionare il cursore o toccare l'icona *Dettagli* (la pagina).
++
+Vengono visualizzate informazioni relative al tipo di disco, alla funzionalità di sicurezza, alla funzione di data assurance (da), alla protezione contro la perdita di shelf e alla protezione contro la perdita di cassetto.
+
+. Fare clic su *Accept* (Accetta).
+

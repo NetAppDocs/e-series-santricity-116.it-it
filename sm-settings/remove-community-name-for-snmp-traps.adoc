@@ -1,0 +1,35 @@
+---
+permalink: sm-settings/remove-community-name-for-snmp-traps.html 
+sidebar: sidebar 
+keywords: remove, community, snmp traps 
+summary: È possibile rimuovere un nome di comunità per i trap SNMP. 
+---
+= Rimuovere il nome di comunità per i trap SNMP
+:allow-uri-read: 
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile rimuovere un nome di comunità per i trap SNMP.
+
+.Fasi
+. Selezionare *menu:Impostazioni[Avvisi]*.
+. Selezionare la scheda *SNMP*.
++
+Le destinazioni trap e i nomi di comunità vengono visualizzati nella pagina Avvisi.
+
+. Selezionare *Configura community*.
++
+Viene visualizzata la finestra di dialogo *Configura comunità*.
+
+. Selezionare il nome della community che si desidera eliminare, quindi fare clic sull'icona *Rimuovi* (X) all'estrema destra.
++
+Se le destinazioni trap sono associate a questo nome di comunità, la finestra di dialogo *Conferma rimozione comunità* mostra gli indirizzi di destinazione trap interessati.
+
+. Confermare l'operazione, quindi fare clic su *Rimuovi*.
+
+
+.Risultati
+Il nome di comunità e la destinazione trap associata vengono rimossi dalla pagina *Alerts*.

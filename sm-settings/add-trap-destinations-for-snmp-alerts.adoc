@@ -1,0 +1,57 @@
+---
+permalink: sm-settings/add-trap-destinations-for-snmp-alerts.html 
+sidebar: sidebar 
+keywords: ten server, snmp traps, sending 
+summary: 'È possibile aggiungere fino a 10 server per l"invio di trap SNMP.' 
+---
+= Aggiungere destinazioni trap per gli avvisi SNMP
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+È possibile aggiungere fino a 10 server per l'invio di trap SNMP.
+
+.Prima di iniziare
+* Il server di rete che si desidera aggiungere deve essere configurato con un'applicazione di servizio SNMP. È necessario l'indirizzo di rete di questo server (un indirizzo IPv4 o IPv6), in modo che il monitor eventi possa inviare messaggi trap a tale indirizzo. È possibile utilizzare più di un server (sono consentiti fino a 10 server).
+* È necessario creare un nome di comunità composto solo da caratteri ASCII stampabili. Il nome di comunità, che è una stringa che agisce come una password per i server di rete, viene in genere creato da un amministratore di rete. È possibile creare fino a 256 community.
+* Il file MIB (Management Information base) è stato copiato e compilato sul server con l'applicazione del servizio SNMP. Questo file MIB definisce i dati monitorati e gestiti.
++
+Se non si dispone del file MIB, è possibile ottenerlo dal sito NetApp Support:
+
++
+** Passare a. https://mysupport.netapp.com/site/["Supporto NetApp"^].
+** Fare clic su *Downloads*.
+** Fare clic su *Software*.
+** Individuare il software di gestione (ad esempio, Gestore di sistema di SANtricity), quindi fare clic su *Go!* (Vai) a destra.
+** Fare clic su *View & Download* (Visualizza e scarica) nella versione più recente.
+** Fare clic su *continua* nella parte inferiore della pagina.
+** Accettare l'EULA.
+** Scorrere verso il basso fino a visualizzare *MIB file for SNMP trap*, quindi fare clic sul collegamento per scaricare il file.
+
+
+
+
+.Fasi
+. Selezionare *Impostazioni* > *Avvisi*.
+. Selezionare la scheda *SNMP*.
++
+Le destinazioni trap attualmente definite vengono visualizzate nella tabella.
+
+. Selezionare *Add Trap Desinations* (Aggiungi Desination trap).
++
+Viene visualizzata la finestra di dialogo Add Trap Destinations (Aggiungi destinazioni trap).
+
+. Inserire una o più destinazioni trap, selezionare i nomi di comunità associati, quindi fare clic su *Aggiungi*.
++
+** *Destinazione trap* -- immettere un indirizzo IPv4 o IPv6 del server che esegue un servizio SNMP.
+** *Nome di comunità* -- dal menu a discesa, selezionare il nome di comunità per questa destinazione trap. (Se è stato definito un solo nome di comunità, il nome viene già visualizzato in questo campo).
+** *Send Authentication Failure Trap* -- selezionare questa opzione (la casella di controllo) se si desidera avvisare la destinazione della trap ogni volta che una richiesta SNMP viene rifiutata a causa di un nome di comunità non riconosciuto. Dopo aver fatto clic su *Aggiungi*, nella tabella vengono visualizzate le destinazioni trap e i nomi di comunità associati.
+
+
+. Per assicurarsi che un trap sia valido, selezionare una destinazione trap dalla tabella, quindi fare clic su *Test Trap Destination* (destinazione trap test) per inviare un trap di test all'indirizzo configurato.
+
+
+.Risultati
+Il monitor degli eventi invia trap SNMP ai server ogni volta che si verifica un evento verificabile.
